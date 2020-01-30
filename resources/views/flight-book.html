@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   
+    <title>Travel Trip Plus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,500i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" rel="stylesheet" />
+   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/flick/jquery-ui.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.css" rel="stylesheet" />
+    
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link href="assets/css/range-slider.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/range-slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="topmenu">
+        <div>
+          <ul class="topleft">
+            <li><i class="fas fa-phone"></i> Any Questions? Call Us: <a href="#">1-223-355-2214</a></li>
+          </ul>
+          <ul class="topright">
+<!-- 
+<li><a href="login.html">Login</a></li> -->
+<li class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><!-- <i class="fas fa-user-circle"></i>  -->Login
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="login.html">Login As User</a></li>
+      <li><a href="agent-login.html">Login As Agent</a></li>
+    </ul>
+  </li>
+</ul>
+        </div>
+      </div>
+      <div class="home-content">
+        <header class="white-head">
+          <div class="header-menu">
+            <div class="container-fluid">
+              <div class="mOverlay"></div>
+              <div class="row d-flex align-items-center justify-content-between flex-wrap">
+                <div class="logo">
+                  <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                </div>
+                <button class="main-menu-bar"><i class="fas fa-bars"></i></button>
+                <div class="main-menu">
+                 <ul class="d-flex flex-wrap">
+<li><a href="index.html">HOME</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <section class="booking">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="review-div">
+                  <div class="box-title"><i class="fas fa-search-plus"></i>  Review Your Booking</div>
+                  <div class="change"><a href="flights.html">Change Flight</a></div>
+                </div>
+                <div class="booking-content">
+                  <div class="total-time">
+                    <span class="trip-time">Total Time: 1h 15m</span>
+                    <span class="review-title">Departure</span>
+                  </div>
+                  <div class="sector-detail">
+                    <div class="row">
+                      
+                      <div class="text-sm-center col-sm-2 col-lg-3 text-xs-left">
+                        <div class="flight-pic">
+                          <picture>
+                            <source media="(min-width: 650px)" srcset="assets/images/flight-review-logo.png">
+                            <source media="(min-width: 465px)" srcset="assets/images/flight-review-logo.png">
+                            <img src="assets/images/flight-review-logo.png" alt="flight logo" style="width:auto;">
+                          </picture>
+                        </div>
+                        <div class="flight-info">
+                          <p>Airindia</p>
+                          <p class="small-txt">AI - 471</p>
+                          <p>32B</p>
+                          
+                        </div>
+                        
+                      </div>
+                      <div class="col-sm-10 col-lg-9">
+                        <div class="row">
+                          <div class="col-6 order-first col-md-3">
+                            <div class="from-place">
+                              <p>New Delhi, IN</p>
+                              <h3>13:20</h3>
+                              <p class="bold">Tue, 26 Feb 2019</p>
+                              <span class="gray-light">Indira Gandhi<span>, T-3</span></span>
+                            </div>
+                          </div>
+                          <div class="col-6 col-md-3">
+                            <div class="to-place">
+                              <p>Udaipur, IN</p>
+                              <h3>14:35</h3>
+                              <p class="bold">Tue, 26 Feb 2019</p>
+                              <span class="gray-light">Maharana Pratap</span>
+                            </div>
+                          </div>
+                          
+                          <div class="col-sm-12 text-center order-md-first col-md-6 col-lg-6">
+                            <p class="top-para">
+                              <span class="time-taken">
+                              <i class="far fa-clock"></i>&nbsp; 1h 15m &nbsp;</span>
+                              
+                              <span class="meal"><span class="light-line">|</span>&nbsp;Free Meal</span>
+                              <span class="economy"><span class="light-line">|</span>&nbsp; Economy</span>
+                            </p>
+                            <p class="middle-para"><span class="type-text"><i class="fas fa-plane"></i>Flight</span></p>
+                            <p class="bottom-para"><span>25 kgs &nbsp;</span><span class="light-line">|</span>&nbsp;<span>Partially Refundable</span>
+                            
+                            
+                          </p></div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="booking-div">
+                    <div class="box-title"><i class="fas fa-user-edit"></i> Enter Traveller Details</div>
+                    <!-- <div class="change"><p><a href="login.html">Sign in</a>  to book faster and use eCash</p></div> -->
+                  </div>
+                  <div class="traveller-details">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-3"><div class="labl"><label>Contact Details</label></div></div>
+                        <div class="col-md-5 form-group"><input type="text" class="form-control" placeholder="Email ID"></div>
+                         <div class="col-md-4 form-group ad-mobile"><div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">
+                                    <select>
+                                      <option>+91</option>
+                                      <option>(+355)</option>
+                                      
+                                    </select>
+                                  </div>
+                                </div>
+                                <input type="text" class="form-control">
+                              </div></div>
+                              <div class="offset-3 col-md-9 col-xs-12">
+                          <div class="padd-none">
+                            <div class="txt2">
+                              <p>Your booking details will be sent to this email address. </p>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="offset-3 col-md-9">
+                          <div class="travel-info">
+                            <h4>Traveller Information</h4>
+                            <p><span class="note">Important Note:</span> Please ensure that the names of the passengers on the travel documents is the same as on their government issued identity proof.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-3"><div class="labl"><label>Adult 1</label></div></div>
+                        <div class="col-md-5 title-select form-group"><div class="input-group">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text">
+                              <select>
+                                <option>Title</option>
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Ms.</option>
+                              </select>
+                            </div>
+                          </div>
+                          <input type="text" placeholder="First Name" class="form-control">
+                        </div></div>
+                        <div class="col-md-4 form-group"><input type="text" class="form-control" placeholder="Last Name"></div>
+                        
+                        
+                      </div>
+                    </form>
+                  </div>
+                  <div class="add-gst">
+                    <div class="add-inner">
+                      <div class="icon-div"><i class="fas fa-file-invoice"></i></div>
+                      <div class="add-txt">
+                        <h4>Add your GST Details <span>(Optional)</span></h4>
+                        <p>Claim credit of GST charges. Your taxes may get updated post submitting your GST details.</p>
+                      </div>
+                      <div class="add-btn"><!-- <a href="#" class="show_hide"></a> -->
+                      <div class="toggle"><p>Show</p></div>
+                    </div>
+                  </div>
+                  <div class="content">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="gst-form">
+                            <div class="row form-group">
+                              <div class="col-md-5"><label>GST Number:</label></div>
+                              <div class="col-md-7"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-5"><label>Email Id:</label></div>
+                              <div class="col-md-7"><input type="text" class="form-control"></div>
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="col-md-6">
+                          <div class="gst-form">
+                            <div class="row form-group">
+                              <div class="col-md-5"><label>Company Name:</label></div>
+                              <div class="col-md-7"><input type="text" class="form-control"></div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-5"><label>Mobile Number</label></div>
+                              <div class="col-md-7"><div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div class="input-group-text">
+                                    <select>
+                                      <option>+91</option>
+                                      <option>(+355)</option>
+                                      
+                                    </select>
+                                  </div>
+                                </div>
+                                <input type="text" placeholder="First Name" class="form-control">
+                              </div></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 text-right"><button class="gst-btn">Add GST</button></div>
+                      </div>
+                    </form>
+                  </div>
+                  
+                </div>
+                <div class="booking-div">
+                  <div class="box-title"><i class="fas fa-plus-circle"></i>  Service Requests <span>(Optional)</span></div>
+                  
+                </div>
+                <div class="service-div">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button class="add-meal"><i class="fas fa-plus"></i> Add Meal</button> <button class="add-baggage"><i class="fas fa-plus"></i> Add Baggage</button> <button class="select-seat"><i class="fas fa-plus"></i> Select Seats</button>
+                      <div class="meal-add">
+                         <h3>Select Meal preferences</h3>
+                        <p>Del <i class="fas fa-long-arrow-alt-right"></i> PAT</p>
+                        <select class="form-control">
+                          <option>Select your meal</option>
+                          <option>Non Veg Sandwich and Coke (INR 260)</option>
+                          <option>Samosa and Chai (INR 230)</option>
+                        </select>
+                      </div>
+                       <div class="baggage-add">
+                         <h3>Buy extra baggage allowance</h3>
+                        <p>Del <i class="fas fa-long-arrow-alt-right"></i> PAT</p>
+                        <select class="form-control">
+                          <option>Select excess baggage</option>
+                          <option>5 kg (INR 1900)</option>
+                          <option>10 kg (INR 3800)</option>
+                        </select>
+                      </div>
+                      <div class="seat-div">
+                        <h3>Select seat preferences</h3>
+                        <p>Del <i class="fas fa-long-arrow-alt-right"></i> PAT</p>
+                        <button id="seat-select">Select Seat</button>
+                      </div>
+                      <div class="add-ons">
+                        <h4>Add–ons <span>(Optional)</span></h4>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="addon">
+                          <label class="custom-control-label" for="addon">Flat Rs.1000 OFF on Domestic Flights round the year with the Travel Trip Plus. I want to be contacted by the SBI representative to receive more information.</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="addon1">
+                          <label class="custom-control-label" for="addon1">Flat Rs.1000 OFF on Domestic Flights round the year with the Travel Trip Plus. I want to be contacted by the SBI representative to receive more information.</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="proceed">
+                  <a href="#">Proceed To Payment</a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="fare-detail">
+                  <div class="fare-title">
+                    <h4>Fare Details</h4>
+                  </div>
+                  <div class="fare-content">
+                    <div class="row">
+                      <div class="col-8" id="flip"><div class="base"><p>Base Fare <span>(1 Traveller)</span> <i class="fas fa-chevron-down"></i></p></div></div>
+                      <div class="col-4"><div class="base-fare"><i class="fas fa-rupee-sign"></i> 6,100<p></p></div></div>
+                      <div class="col-12">
+                        <div class="hidden-content">
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>Adult   x 1</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 6,100</p></div></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8" id="flip1"><div class="base"><p>Fee &amp; Surcharges <i class="fas fa-chevron-down"></i></p></div></div>
+                      <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 708</p></div></div>
+                      <div class="col-12">
+                        <div class="hidden-content1">
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>CUTE Fee</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 50</p></div></div>
+                          </div>
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>Airline Fuel Surcharges</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 100</p></div></div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>Passenger Service Fee</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 244</p></div></div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>GST</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 314</p></div></div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row total-pay">
+                      <div class="col-md-12">
+                        <div class="amount-toal">
+                          <div class="row">
+                            <div class="col-7" id="flip1"><div class="base"><p>Total Fare:</p></div></div>
+                            <div class="col-5 text-right"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 7,087</p></div></div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8" id="flip2"><div class="base"><p>Add-Ons <i class="fas fa-chevron-down"></i></p></div></div>
+                      <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 548</p></div></div>
+                      <div class="col-12">
+                        <div class="hidden-content2" style="display: none;">
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>CUTE Fee</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 50</p></div></div>
+                          </div>
+                          
+                          
+                          <div class="row">
+                            <div class="col-8"><div class="base"><p>GST</p></div></div>
+                            <div class="col-4"><div class="base-fare"><p><i class="fas fa-rupee-sign"></i> 314</p></div></div>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total-fare">
+                    <div class="you-pay"><p>You Pay :</p></div>
+                    <div class="total-amount"><p><i class="fas fa-rupee-sign"></i> 12,840</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+<div class="overlay">
+  <div class="seatside-panel">
+    <a href="" class="dismiss-menu"><i class="fas fa-times"></i></a>
+    <div class="select-seat-title">
+      <h4>Seat Map - Select your seats</h4>
+    </div>
+    <div class="seat-layout">
+      <div class="seat-layout-inner">
+      <div class="seat-layout-left">
+        <div class="departure-info">
+          <div class="depart">
+            departure
+          </div>
+          <!--depart close-->
+          <div class="city-code-holder">
+            <span class="city-code"> DEL </span>
+            <i class="fas fa-long-arrow-alt-right"></i>
+            <span class="city-code">PAT</span>
+            <span class="seprator">|</span>
+            <span class="reach-day">Tue, 5 Mar 2019</span>
+          </div>
+        </div>
+        <div class="seating-area">
+          <div class="front">
+            <span class="portion">Front</span>
+            <ul class="column">
+             <li  class="seat-li">
+                F
+              </li>
+              <li class="seat-li">
+                E
+              </li>
+             <li class="seat-li">
+                D
+              </li>
+             <li class="seat-li">
+                C
+              </li>
+              <li class="seat-li">
+                B
+              </li>
+              <li class="seat-li">
+                A
+              </li>
+            </ul>
+          </div>
+          <div class="back">
+            <span class="portion">Back</span>
+          </div>
+          <div class="seating-areainner">
+            <div class="wing-left">
+              <span>seat over wing</span>
+            </div>
+            <div class="floor">
+              <div class="seats-layoutinner">
+                <ul class="column">
+                 <li class="seat-li right">1</li>
+                  <li class="seat-li booked">1F</li>
+                  <li class="seat-li booked">1F</li>
+                  <li class="seat-li booked">1F</li>
+                  <li class="seat-li booked">1F</li>
+                  <li class="seat-li booked">1F</li>
+                  <li class="seat-li booked">1F</li>
+                  <li class="seat-li left">1</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">2</li>
+                  <li class="seat-li booked">2F</li>
+                  <li class="seat-li booked">2F</li>
+                  <li class="seat-li booked">2F</li>
+                  <li class="seat-li booked">2F</li>
+                  <li class="seat-li booked">2F</li>
+                  <li class="seat-li booked">2F</li>
+                  <li class="seat-li left">2</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">3</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li left">3</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">3</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li booked">3F</li>
+                  <li class="seat-li left">3</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">4</li>
+                  <li class="seat-li booked">4F</li>
+                  <li class="seat-li booked">4F</li>
+                  <li class="seat-li booked">4F</li>
+                  <li class="seat-li booked">4F</li>
+                  <li class="seat-li booked">4F</li>
+                  <li class="seat-li booked">4F</li>
+                  <li class="seat-li left">4</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">5</li>
+                  <li class="seat-li booked">5F</li>
+                  <li class="seat-li booked">5F</li>
+                  <li class="seat-li booked">5F</li>
+                  <li class="seat-li booked">5F</li>
+                  <li class="seat-li booked">5F</li>
+                  <li class="seat-li booked">5F</li>
+                  <li class="seat-li left">5</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">6</li>
+                  <li class="seat-li booked">6F</li>
+                  <li class="seat-li booked">6F</li>
+                  <li class="seat-li booked">6F</li>
+                  <li class="seat-li booked">6F</li>
+                  <li class="seat-li booked">6F</li>
+                  <li class="seat-li booked">6F</li>
+                  <li class="seat-li left">6</li>
+                </ul> <ul class="column">
+                 <li class="seat-li right">7</li>
+                  <li class="seat-li booked">7F</li>
+                  <li class="seat-li booked">7F</li>
+                  <li class="seat-li booked">7F</li>
+                  <li class="seat-li booked">7F</li>
+                  <li class="seat-li booked">7F</li>
+                  <li class="seat-li booked">7F</li>
+                  <li class="seat-li left">7</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">8</li>
+                  <li class="seat-li booked">8F</li>
+                  <li class="seat-li booked">8F</li>
+                  <li class="seat-li booked">8F</li>
+                  <li class="seat-li booked">8F</li>
+                  <li class="seat-li booked">8F</li>
+                  <li class="seat-li booked">8F</li>
+                  <li class="seat-li left">8</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">9</li>
+                  <li class="seat-li booked">9F</li>
+                  <li class="seat-li booked">9F</li>
+                  <li class="seat-li booked">9F</li>
+                  <li class="seat-li booked">9F</li>
+                  <li class="seat-li booked">9F</li>
+                  <li class="seat-li booked">9F</li>
+                  <li class="seat-li left">9</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">10</li>
+                  <li class="seat-li booked">10F</li>
+                  <li class="seat-li booked">10F</li>
+                  <li class="seat-li booked">10F</li>
+                  <li class="seat-li booked">10F</li>
+                  <li class="seat-li booked">10F</li>
+                  <li class="seat-li booked">10F</li>
+                  <li class="seat-li left">10</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">11</li>
+                  <li class="seat-li booked">11F</li>
+                  <li class="seat-li booked">11F</li>
+                  <li class="seat-li booked">11F</li>
+                  <li class="seat-li booked">11F</li>
+                  <li class="seat-li booked">11F</li>
+                  <li class="seat-li booked">11F</li>
+                  <li class="seat-li left">11</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">12</li>
+                  <li class="seat-li booked">12F</li>
+                  <li class="seat-li booked">12F</li>
+                  <li class="seat-li booked">12F</li>
+                  <li class="seat-li booked">12F</li>
+                  <li class="seat-li booked">12F</li>
+                  <li class="seat-li booked">12F</li>
+                  <li class="seat-li left">12</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">13</li>
+                  <li class="seat-li booked">13F</li>
+                  <li class="seat-li booked">13F</li>
+                  <li class="seat-li booked">13F</li>
+                  <li class="seat-li booked">13F</li>
+                  <li class="seat-li booked">13F</li>
+                  <li class="seat-li booked">13F</li>
+                  <li class="seat-li left">13</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">14</li>
+                  <li class="seat-li booked">14F</li>
+                  <li class="seat-li booked">14F</li>
+                  <li class="seat-li booked">14F</li>
+                  <li class="seat-li booked">14F</li>
+                  <li class="seat-li booked">14F</li>
+                  <li class="seat-li booked">14F</li>
+                  <li class="seat-li left">14</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">15</li>
+                  <li class="seat-li booked">15F</li>
+                  <li class="seat-li booked">15F</li>
+                  <li class="seat-li booked">15F</li>
+                  <li class="seat-li booked">15F</li>
+                  <li class="seat-li booked">15F</li>
+                  <li class="seat-li booked">15F</li>
+                  <li class="seat-li left">15</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">16</li>
+                  <li class="seat-li booked">16F</li>
+                  <li class="seat-li booked">16F</li>
+                  <li class="seat-li booked">16F</li>
+                  <li class="seat-li booked">16F</li>
+                  <li class="seat-li booked">16F</li>
+                  <li class="seat-li booked">16F</li>
+                  <li class="seat-li left">16</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">17</li>
+                  <li class="seat-li booked">17F</li>
+                  <li class="seat-li booked">17F</li>
+                  <li class="seat-li booked">17F</li>
+                  <li class="seat-li booked">17F</li>
+                  <li class="seat-li booked">17F</li>
+                  <li class="seat-li booked">17F</li>
+                  <li class="seat-li left">17</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">18</li>
+                  <li class="seat-li booked">18F</li>
+                  <li class="seat-li booked">18F</li>
+                  <li class="seat-li booked">18F</li>
+                  <li class="seat-li booked">18F</li>
+                  <li class="seat-li booked">18F</li>
+                  <li class="seat-li booked">18F</li>
+                  <li class="seat-li left">18</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">19</li>
+                  <li class="seat-li booked">19F</li>
+                  <li class="seat-li booked">19F</li>
+                  <li class="seat-li booked">19F</li>
+                  <li class="seat-li booked">19F</li>
+                  <li class="seat-li booked">19F</li>
+                  <li class="seat-li booked">19F</li>
+                  <li class="seat-li left">19</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">20</li>
+                  <li class="seat-li booked">20F</li>
+                  <li class="seat-li booked">20F</li>
+                  <li class="seat-li booked">20F</li>
+                  <li class="seat-li booked">20F</li>
+                  <li class="seat-li booked">20F</li>
+                  <li class="seat-li booked">20F</li>
+                  <li class="seat-li left">20</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">21</li>
+                  <li class="seat-li booked">21F</li>
+                  <li class="seat-li booked">21F</li>
+                  <li class="seat-li booked">21F</li>
+                  <li class="seat-li booked">21F</li>
+                  <li class="seat-li booked">21F</li>
+                  <li class="seat-li booked">21F</li>
+                  <li class="seat-li left">21</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">22</li>
+                  <li class="seat-li booked">22F</li>
+                  <li class="seat-li booked">22F</li>
+                  <li class="seat-li booked">22F</li>
+                  <li class="seat-li booked">22F</li>
+                  <li class="seat-li booked">22F</li>
+                  <li class="seat-li booked">22F</li>
+                  <li class="seat-li left">22</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">23</li>
+                  <li class="seat-li booked">23F</li>
+                  <li class="seat-li booked">23F</li>
+                  <li class="seat-li booked">23F</li>
+                  <li class="seat-li booked">23F</li>
+                  <li class="seat-li booked">23F</li>
+                  <li class="seat-li booked">23F</li>
+                  <li class="seat-li left">23</li>
+                </ul>
+                 <ul class="column">
+                 <li class="seat-li right">24</li>
+                  <li class="seat-li booked">24F</li>
+                  <li class="seat-li booked">24F</li>
+                  <li class="seat-li booked">24F</li>
+                  <li class="seat-li booked">24F</li>
+                  <li class="seat-li booked">24F</li>
+                  <li class="seat-li booked">24F</li>
+                  <li class="seat-li left">24</li>
+                </ul>
+              </div>
+            </div>
+            <div class="wing-right" >
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="seat-layout-right">
+        <div class="btn-section">
+          
+          <button class="deck-select">Maindeck</button>
+          
+        </div>
+        <div class="seat-type">
+          <ul class="legends ng-binding">
+            <li><span class="seat-li"></span> <span>Available Seat(44)</span></li>
+            
+            <li><span class="seat-li booked"></span> <span>Occupied Seat(94)</span></li>
+            
+            <li><span class="seat-li selected"></span> <span>Selected Seat(0)</span></li>
+            
+            <li><span class="seat-li comfort"></span> <span>Pay for extra comfort(0)</span></li>
+            
+            <li><span class="seat-li lavatory"></span> <span>Lavatory</span></li>
+          </ul>
+        </div>
+      </div></div>
+ <div class="proceed">
+                  <a href="#">Confirm</a>
+                </div>
+    </div>
+   
+  </div>
+</div>
+    </div>
+    <footer>
+      <div class="top-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-content">
+              <h5><span>About us</span></h5>
+              <p>Taking the guesswork out of planning
+                your vacation is our job. We serve your
+                international travel needs with highly
+                trained advisors who will assist you at
+                every direction of your vacation planning.
+              And we are ready to go with you!</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-menu">
+              <h5><span>Quick Links</span></h5>
+              <ul class="d-flex flex-wrap">
+                <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home
+                </a></li>
+                <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us
+                </a></li>
+                <li><a href="contact"><i class="fas fa-chevron-right"></i> Contact Us
+                </a></li>
+                
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-contact">
+              <h5><span>Contact Info</span></h5>
+              <ul>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> 7226 Belmont Harbor Access Place,
+                Brossard, LA</a></li>
+                <li><a href="#"><i class="fas fa-phone"></i> (+93) 1-555-555</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> info@traveltripplus.com</a></li>
+              </ul>
+            </div>
+            
+            
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-newsletter">
+              <h5><span>Social Media</span></h5>
+              <ul class="footer-social">
+                <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="insta"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="youtube"><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                
+              </ul>
+              <img src="assets/images/footer-logo.png">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6"><p>© TravelTripplus, ALL RIGHTS RESERVED.</p></div>
+            <div class="col-md-6"><ul><li><a href="#">Privacy Policy</a></li><li class="current"><a href="#">About Us</a></li><li><a href="#"> Support</a></li><li><a href="#">Faq</a></li><li><a href="#">Contact Us</a></li></ul></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

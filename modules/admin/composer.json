@@ -1,0 +1,12 @@
+{
+    "name": "Modules/admin",
+    "require": {
+        "ext-bcmath": "^0.0.0"
+    },
+    "authors": [
+        {
+            "name": "Abhishek Pathak",
+            "email": "apathak@panindia.in"
+        }
+    ]
+}

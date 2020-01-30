@@ -1,0 +1,3260 @@
+@font-face {
+    font-family: 'star';
+    src: url('../fonts/star.eot');
+    src: url('../fonts/star.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/star.woff') format('woff'),
+      url('../fonts/star.ttf') format('truetype'),
+      url('../fonts/star.svg#star') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  html, body {width: 100%; height: 100%; } body{font-size: 14px;font-family: 'Ubuntu', sans-serif;font-weight: 400;background: #fff;}
+h1, h2, h3, h4, h5, h6{ margin: 0; font-weight:600; color: #333; } body a{color: #777;transition:0.5s all;-webkit-transition:0.5s all;-moz-transition:0.5s all;-o-transition:0.5s all;-ms-transition:0.5s all;text-decoration:none;outline:none;}
+ul,label,p{margin:0;padding:0; } ul {list-style:none;} a:hover{text-decoration:none;color: #888;} a:focus{outline:none;text-decoration:none; color: inherit;}
+img{max-width:100%;width:auto;margin: auto;} 
+.container-fluid {max-width: 1200px;}
+.site-wrapper {background: #fff; position: relative;width: 100%;}
+.form-control, .btn {border-radius: 1px;}
+.form-control:focus {box-shadow: none; outline: none; }
+.custom-checkbox .custom-control-label::before {border-radius: 0;}
+ /* .filter-area  {display: none;}  */
+.topmenu {background: #161616;display: flex;width: 100%;padding: 5px 4%;font-size: .9rem;flex-wrap: wrap;}
+.topmenu div {display: flex;max-width: 1200px;padding-left: 15px;margin-right: auto;margin-left: auto;width: 100%;color: #999;align-items: center;}
+ul.topright {display:flex;margin-left: auto;margin-bottom: 0px;align-items: center;}
+ul.topleft {  margin-bottom: 0px;}
+.topmenu a { color: #999;}
+.topmenu .topright li a { padding: 0px 10px;}
+.topmenu .topright li.search a { padding: 0px 0px 0px 10px; font-size: 18px;}
+.logo {padding: 8px 0px;}
+.main-menu ul li a {padding: 20px;text-transform: uppercase;font-size: 18px;color: #222;}
+.main-menu li.current a {font-weight: 600;color: #000;border-bottom: 2px solid #016dff;}
+.main-menu-bar, .dismiss-menu {display: none;}
+.home-content {position: relative;top: 0px;left: 0px;}
+header {position: absolute;top: 0px;left: 0px;z-index: 999;width: 100%;}
+#home-slider .carousel-inner,#home-slider .carousel-item, #home-slider .carousel-item img { width: 100%; height: 100%; object-fit: cover;}
+.carousel-control-prev,.carousel-control-next { width: 50px; height: 50px; line-height: 50px; font-size: 20px; position: absolute; top: 50%; background: #fff;
+opacity: 1; box-shadow: 0px 0px 3px #ccc; border-radius: 100%; color: #d81919;}
+.carousel-control-prev{ left:50px;}
+.carousel-control-next {right: 50px;}
+#home-slider { height: 100vh; overflow: hidden;}
+#home-slider .carousel-inner,#home-slider .carousel-item, #home-slider .carousel-item img {width: 100%;height: 100%;object-fit: cover;}
+#home-slider .carousel-control-prev,.carousel-control-next {width: 50px;height: 50px;line-height: 50px;font-size: 20px;position: absolute;top: 64%;background: none;opacity: 1;box-shadow: none;border-radius: 100%;color: #333;}
+#home-slider .carousel-control-prev{left: 6%;}
+#home-slider .carousel-control-next {right: 6%;}
+#home-slider .carousel-control-prev span,#home-slider .carousel-control-next span { background: #fff; height: 2px;  opacity: 1;  width: 45px;}
+.slider-tabs{position: absolute;width: 100%;top: 30%;}
+.search-title h2 {font-weight: 400;color: #00204c;text-align: center;padding-bottom: 30px;text-shadow: 0px 0px 3px #999;}
+.tab-content {background: #173253;padding: 20px;border-radius: 10px;}
+ul.nav.nav-tabs {padding-left: 20px;}
+.nav-tabs .nav-item {background: #00204c;border-radius: 7px 7px 0px 0px;margin-right: 2px;color:#fff;}
+.nav-tabs .nav-item .nav-link{color:#fff;min-width: 140px;text-align: center;padding: 15px;font-size: 15px;text-transform: uppercase;}
+.nav-tabs .nav-item .nav-link.active{border-radius: 6px 6px 0px 0px;color:#000;}
+.input-group-addon {padding: 6px 12px;font-size: 14px;color: #555555;text-align: center;border: none;position: absolute;right: 0px;top: 50%;transform: translate(0%, -50%);z-index: 9;}
+#flight .custom-control.custom-checkbox ,#hotel .custom-control.custom-checkbox ,#bus .custom-control.custom-checkbox {
+text-align: center;color: #fff;}
+.primary-btn {background: #ff9d02;border: 0px;padding: 10px 30px;color: #fff;text-transform: uppercase;border-radius: 7px;position: absolute;outline: none;left: 50%;transform: translate(-50%);cursor:pointer}
+#home-slider ol.carousel-indicators {bottom: 20%;right: -6%;left: auto;align-items: center;}
+#home-slider ol.carousel-indicators li {width: 6px;height: 6px;border-radius: 100%;background: #333;}
+#home-slider ol.carousel-indicators li.active{ width:10px; height:10px;}
+.welcome {text-align: center;padding: 60px 0px;}
+.welcome-img img {max-width: 35px;}
+.welcome-img span{ display:inline-block; position:relative}
+.welcome-img span:before {background-image:linear-gradient(to right,grey, #fff);content:'';position:absolute;top:50%;left: 50px;width: 250px;height: 1px;}
+.welcome-img span:after {background-image:linear-gradient(to left,grey, #fff);content:'';position:absolute;top:50%;right: 50px;width: 250px;height: 1px;}
+.welcome h2 {font-weight: 400;text-transform: uppercase;margin-bottom: 20px;}
+.welcome p {padding: 30px;color: #777;line-height: 2;}
+.know {border: 1px solid #666;padding: 10px 15px;color: #666;text-transform: uppercase;border-radius: 5px;margin: 0px 10px;}
+.contact {padding: 10px 15px;text-transform: uppercase;background: #016dff;color: #fff;border-radius: 5px;margin: 0px 10px;}
+.top-margin {margin-top: 60px;}
+.activity h3 {display: flex;align-items: center;font-size: 20px;font-weight: 500;margin-bottom: 14px;color: #016dff;}
+.activity h3 span.special {background: none;color: #016dff;width: auto !important;font-size: 17px;line-height: 24px;text-align: left;}
+.activity h3 span {width: 60px;background: #f6f6f6;line-height: 54px;margin-right: 10px;padding: 0px;display: inline-block;}
+.activity p {text-align: left;padding: 0px;}
+.service-section {padding: 60px 0px;background: #f6f6f6;}
+.relatedProduct h4 {font-weight: 300;font-size: 26px;text-transform: uppercase;position: relative;}
+.productItem {box-shadow: 0px 0px 10px #ccc;background: #fff;height: 100%;margin-bottom: 20px;}
+.imge-div {min-height: 300px;height: 100%;max-height: 350px;overflow: hidden;}
+.imge-div img {height: 350px;object-fit: cover;object-position: right;}
+.serviceDetail {padding: 15px;}
+.serviceDetail h3 {font-size: 22px;font-weight: 500;padding-bottom: 10px;}
+.serviceDetail p {color: #777;padding-bottom: 10px;}
+.serviceDetail a {background: #999;padding: 6px 10px;display: inline-block;border-radius: 5px;color: #fff;text-transform: uppercase;
+transition: all ease 0.4s;}
+.serviceDetail a:hover,.productItem:hover .serviceDetail a{ background:#016dff; }
+#productSlider .owl-nav {position: absolute;top: -47px;right: 11px;display: block;}
+#productSlider .owl-nav button {font-size: 20px;width: 30px;background: #016dff;height: 30px;line-height: 30px !important;color: #fff;margin-right: 1px;}
+#productSlider .owl-nav button span{ width:100%; height:100%; display:block;}
+a.image-icon {position: absolute;top: 25%;left: 50%;transform:translate(-50%);background: #016dff;color: #fff;width: 100px;height: 100px;
+line-height: 97px;border-radius: 100%;text-align: center;display:inline-block;box-shadow: 0px 0px 11px rgba(0,0,0,0.25);opacity: 0;
+transition: all ease 0.4s;}
+.productItem:hover a.image-icon{  opacity: 1;}
+.owl-carousel .owl-item .image-icon img {display: inline-block;max-width: 60px;}
+.relatedProduct h4:after {content: '';background: #00afff;height: 3px;display: block;width: 68px;position: absolute;bottom: -18px;}
+#quote-carousel{padding: 0 10px 30px 10px;margin-top: 30px;}
+#quote-carousel .carousel-control{background: none;color: #34394f;font-size: 1em;text-shadow: none;margin-top: 0px;top: 1%;position: absolute;width: 50px;height: 50px;border: 2px solid #a7bcc9;text-align: center;line-height: 50px;}
+#quote-carousel .carousel-control.left {   left: -50px;}
+#quote-carousel .carousel-control.right {right: 0px !important;}
+#quote-carousel img{width: 100px;height: 100px;border-radius: 100%;object-fit: cover;}
+.quote p {font-weight: 300;font-size: 16px;font-style: italic;padding-bottom: 23px;color: #333;font-weight: 300;opacity: 0.7;}
+.quote p span{ font-weight:bold}
+.testimonial-section {background: #cbe9fc;padding: 60px 0px 0px;}
+.testimonial-title {border-bottom: 1px solid #bcd6e8;padding-bottom: 20px;font-weight: 400;text-transform: uppercase;letter-spacing: -1px;position:relative;}
+.testimonial-title:after{content:'';width:60px;height: 3px;background: #00b1eb;display:block;position:absolute;bottom: -2px;left:50%;transform:translate(-50%);}
+.carousel-item blockquote {    border-left: none;   margin: 0;}
+.carousel-item blockquote img {  margin-bottom: 10px;}
+.ad-baner {background: #cbe9fc;text-align: center;}
+.ad-ban img {width: 100%;object-fit: cover;}
+.top-footer {background: #121212;color: #fff;padding: 50px 0px;}
+.top-footer h5 {color: #fff;font-weight: 400;text-transform: uppercase;}
+.top-footer li a { color: #fff;}
+.footer-contact li a i {width: 20px;}
+.footer-contact li a {padding-bottom: 20px;display: block;}
+.footer-contact li a i.fas.fa-phone {-webkit-transform: scaleX(-1);transform: scaleX(-1);text-align: right;}
+ul.footer-social {margin-bottom: 20px;}
+ul.footer-social li {  display: inline-block;}
+ul.footer-social li a {display: inline-block;text-align: center;border-radius: 100%;color: #fff;margin-right: 9px;padding-right: 10px;font-size: 18px;}
+.footer-content img {min-height: 55px;margin-bottom: 10px;vertical-align: middle;max-height: 55px;}
+.footer-contact h5,.top-footer h5 {vertical-align: middle;position:relative;margin-bottom: 20px;}
+.footer-contact h5 span,.top-footer h5 span{ position: relative; }
+.footer-contact h5 span:after,.top-footer h5 span:after{content:'';background: #115aa6;width:70px;height:2px;position:absolute;right: -75px;bottom:0px;}
+.footer-menu ul li {display: block;width: 100%;}
+.footer-menu ul li a {margin-right: 4px;display: block;font-size: 14px;text-transform: uppercase;padding-bottom: 10px;}
+.bottom-footer {background: #0b0b0b;padding: 10px;color: #999;}
+.bottom-footer ul {text-align: right;}
+.bottom-footer ul li {display: inline-block;}
+.bottom-footer ul li a {padding: 10px;color: #fff;}
+.bottom-footer ul li.current a {color: #f7631b;}
+
+header.white-head {position: static;background: #fff;}
+.flight-search {background: #e8f0fa;padding: 30px 0px;}
+.flight-search label {color: #1968d2;padding-left: 10px;}
+.flight-search input,.flight-search select {background: #5791de;color: #fff;border: none;outline: none;border-right: 1px solid #cedff5;height: 50px;}
+.flight-search ::-webkit-input-placeholder, .flight-search ::-moz-placeholder, .flight-search :-ms-input-placeholder,.flight-search .subscribeBox :-moz-placeholder { color: #fff;}
+.modify {background: #ff9d02;color: #fff;text-transform: uppercase;border: none;margin-top: 21px;border-radius: 0px 3px 3px 0px;height: 50px;font-weight: 500;}
+.search-filter {background: #f8f8f6;padding: 30px; width:100%; overflow: hidden; overflow-y: auto; max-height: 100vh;}
+.search-filter h3 {font-size: 22px;font-weight: 400;padding-bottom: 15px;border-bottom: 1px solid #ccc;}
+.stops,.byname,.rating {padding: 12px 0px;}
+.byname, .rating {  border-bottom: 1px solid #ccc;}
+.stops p, .time p, .price p, .airlines > p, .byname > label, .rating > p,.leaving-time > p,.arrival-time > p {color: #016dff;font-size: 17px;padding-bottom: 10px;}
+.stops ul {  display:flex; text-align: -webkit-auto;}
+.stops > ul > li {flex:1;margin:0 3px; text-align: center;}
+.rating ul{ column-count: 5; text-align: center; column-gap: 2px }
+.stops ul li .stop-number {display: block;color: #919191;}
+.rating ul li span {display: block;color: #919191;}
+
+input.tpStop, .tpTimeSlot {position: absolute; z-index: -9; visibility: hidden; width: 0.1px;}
+.stops ul li .stop-number strong{display:block;font-size: 22px;padding-bottom: 0px;}
+.stops ul li .stop-number {background: #dddddd;margin-bottom: 3px;padding: 6px;line-height: initial;}
+.time {border-top: 1px solid #ccc;padding: 15px 0px;border-bottom: 1px solid #ccc;}
+.time ul {/* column-count: 4; *//* column-gap: 2px; */display: flex;flex: 1;height: 1100%;}
+.time ul li {
+    flex: 1;
+    margin: 0px 3px;
+    min-height: 100%;
+}
+.rating ul li a span.rating-icon{background: #fff;display: block;padding: 4px;}
+.rating ul li a {background: #dddddd;display: block;text-align: center;border: 1px solid #ddd;width: 100%;position: relative;}
+.timeSlot {background: #dddddd;display: block;text-align: center;border: 1px solid #ddd;width: 100%;position: relative;}
+.time ul li .timeSlot span {background: #fff;display: block;padding: 4px;}
+.time ul li input[type="checkbox"]:checked + .timeSlot:before {
+    border-top: 4px solid #ff9d02;
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 100%;
+}
+
+.stops ul li .stop-number.current{
+    background: #ff9d02;
+    color: #fff;
+}
+/* .time ul li a,.rating ul li a {background: #dddddd;display: block;text-align: center;border: 1px solid #ddd;width: 100%;} */
+.time ul li .timeSlot span {background: #fff;display: block;padding: 4px;}
+.time ul li .timeSlot span.d-time {background: #ddd;display: block;}
+.time ul li .timeSlot span.morning-icon {background-position: 0px -4px;width: 30px;height: 24px;display: inline-block;background: url(../images/flight_listing_sprite.png) no-repeat;font-size: 0px;}
+.time ul li .timeSlot span.sun-icon {width: 30px;height: 24px;display: inline-block;background: url(../images/flight_listing_sprite.png) no-repeat;font-size: 0px;background-position: -32px -4px;}
+.time ul li .timeSlot span.evening-icon {width: 30px;height: 24px;display: inline-block;background: url(../images/flight_listing_sprite.png) no-repeat;font-size: 0px;background-position: -71px -1px;}
+.time ul li .timeSlot span.moon-icon {width: 30px;height: 24px;display: inline-block;background: url(../images/flight_listing_sprite.png) no-repeat;font-size: 0px;background-position: -107px -1px;}
+.price, .leaving-time, .arrival-time {padding: 15px 0px;border-bottom: 1px solid #ccc;}
+.rangeInput {display: flex;justify-content: space-between;}
+.rangeInput input {width: 65px;border: none;background: transparent;outline: none;color: #808080;font-weight: 400;line-height: 16px;font-size: 13px;}
+.airlines .custom-control {padding-left: 0px;border-bottom: 1px solid #ccc;padding-bottom: 10px;padding-top: 10px;}
+.airlines .custom-control-label {width: 100%;line-height: normal;color: #808080;}
+.airlines .custom-checkbox .custom-control-label::before,.airlines .custom-checkbox .custom-control-label::after {left: auto;right: 0px;top: 11px;outline: none;}
+.labelImg {margin-right: 10px;}
+.airlines {padding: 15px 0px;}
+.top-section {background: #eee;padding: 10px;border-top: 1px solid #e5e5e5;border-right: 1px solid #e5e5e5;}
+.left-div {min-width: 240px;}
+.center-div { flex: 1;}
+.left-div p { text-transform: uppercase; font-size: 14px; margin: 0px; line-height: normal;}
+.left-div p small,.center-div ul li p small { color: #999;}
+.center-div ul li {padding: 0px 15px;vertical-align: top;position: relative;display: inline-block;}
+.center-div ul li p {line-height: normal;width: 100%;}
+.center-div ul li i { position: absolute;top: 0px; right:-8px}
+.right-div a {background: #e4e4e4;border: 1px solid #bfbfbf;color: #666;padding: 6px 10px;border-radius: 3px;display: inline-flex;}
+.right-div i {line-height: inherit;padding-right: 5px;font-size: 13px;}
+.slider-section {padding: 15px 30px;display: flex;flex-wrap: wrap;align-items: center;border: 1px solid #e5e5e5;border-top: 0px;}
+.monthItem {text-align: center;cursor: pointer;}
+#monthSlider {position: relative;}
+#monthSlider .owl-nav {display: block;}
+#monthSlider .owl-nav .owl-prev {position: absolute;top: 50%;left: -9px;outline: none;font-size: 40px;transform: translate(0px,-50% );color: #919191;}
+#monthSlider .owl-nav .owl-next{position: absolute;top: 50%;right: -9px;outline: none;font-size: 40px;transform: translate(0px,-50% );color: #919191;}
+.monthSlide {flex: 1;max-width: 85%;}
+.calender {max-width: 15%;width: -webkit-fill-available;}
+.ButtonClicked .month-price{ color:#00b8f5;}
+.ButtonClicked .month-price .rs{ color:#343a40;}
+.month-content1{display: none;border-top: 4px solid #16bef5;margin-top: 4px;padding-top: 4px;}
+.flight-head {padding: 11px 10px;display: flex;background: #fafafa;border: 1px solid #e5e5e5;border-top: 0px;}
+.flight-body {padding: 10px;}
+.flight-inner {background: #f8f8f6;display: flex;align-items: center;border: 1px solid #e5e5e5;border-radius: 3px 3px 0px 0px;padding: 5px;}
+.flight-title {flex: 1;padding-left: 52px;}
+.flight-Btitle {flex: 1;max-width: 180px; display: flex; align-items: center;}
+.flightX { display: flex;flex-direction: column;justify-content: space-around;min-height: 130px;flex: 1;text-align: center;
+}
+.flight-rest {display: flex;align-items: center; flex: 1;}
+.flight-depart, .flight-ariv, .flight-dur, .flight-price,.flight-btn {min-width: 120px;text-align: center;}
+.flight-logo {width: 45px;margin-right: 7px;}
+.flight-rest > div {min-width: 140px;text-align: center;}
+.internalFlight .flight-rest > div {
+    flex: 1 1 auto;
+}
+.flight-name {color: #808080;font-size: 16px;line-height: normal;}
+.flight-price1 {color: #808080;font-size: 13px;line-height: normal;padding-top: 3px;}
+.flight-Bdepart, .flight-Bariv,.flight-Bprice {font-size: 14px; display: flex; align-items: center;}
+.flight-Bprice {font-weight: ;}
+.flight-Bbtn .modify {background: #ff9d02;color: #fff;border-radius: 5px;width: auto;padding: 8px 16px;text-align: center;border:none;}
+.flight-footer {background: #dddddd;padding: 5px 10px;border-radius: 0px 0px 3px 3px;border: 1px solid #e5e5e5;border-top: 0px;display: flex;justify-content: space-between;font-size: 13px;color: #808080;align-items: center;}
+.flight-cash span {padding: 2px 12px;}
+span.cash-amt {background: #00b8f8;color: #fff;display: inline-flex;}
+.flight-cash {border: 1px solid #999;border-radius: 3px;overflow: hidden;}
+.flight-body-main{transition: all ease 0.3s;margin-bottom: 20px;}
+.flight-body-main:hover,.bus-inner:hover {box-shadow: 0px 0px 20px #e5e5e5;cursor: pointer;}
+.filter-btn,.sort-btn{opacity: 0;display: none;}
+.full.filter-head{ display: none;}
+.full-fiter { background:none}
+.booking {background: #e5e5e5;padding: 50px 0px;}
+.change,.change a{text-align: right;color: #016dff;}
+.review-div { display: flex; flex: 1; justify-content: space-between; align-items: center;}
+.box-title {font-size: 26px;background-image: linear-gradient(to right, #845305,#ff9d02);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;}
+.box-title i { font-size: 18px;}
+.booking-content {background: #fff;box-shadow: 0px 0px 2px #ccc;margin-top: 10px;border-radius: 1px;position: relative;padding: 30px 15px;margin-bottom: 10px;}
+.total-time { text-align: right;}
+.box-title span {font-size: 17px;}
+.add-txt h4 span {font-weight: 400;}
+.box-title i { -webkit-text-fill-color: #845306;vertical-align: middle;
+margin-right: 10px;color: #845306;}
+span.review-title {padding: 3px 15px 6px;min-width: 94px;border-radius: 4px;clear: both;position: absolute;left: -50px;top: 50%;-webkit-transform: translateY(-50%) rotate(-90deg);transform: translateY(-50%) rotate(-90deg);
+font-size: 14px;text-align: center;color: #666;background-color: #fafafa;}
+.flight-pic img {width: 35px;height: 35px;}
+.flight-info {padding-top: 10px;}
+.flight-info p {font-size: 12px;}
+.flight-info p.small-txt {color: #999;}
+.from-place p,.to-place p {font-size: 14px;}
+.from-place h3,.to-place h3 {font-weight: 500;}
+.from-place p.bold {font-weight: 500;line-height: normal;}
+span.gray-light {color: #888;font-size: 13px;}
+span.trip-time {position: absolute;right: 25px;top: 5px;font-size: 12px;}
+span.trip-date {position: absolute;left: 25px;top: 5px;font-size: 12px;}
+.top-para,.middle-para,.bottom-para {font-size: 13px;}
+p.middle-para {border-top: 1px solid #e4e4e4;line-height: 0px;position: relative;text-align: center;color: #999;margin: 15px 0px;}
+p.middle-para:after {background-color: #e4e4e4;content: " ";display: inline-block;height: 8px;position: absolute;left: 0;top: -5px;width: 1px;}
+span.type-text {position: absolute;top: -7px;left: 50%;transform: translate(-50%);background: #fff;padding: 0px 5px;}
+p.middle-para:before {background-color: #e4e4e4;content: " ";display: inline-block;height: 8px;position: absolute;right: 0;top: -5px;width: 1px;}
+.booking-div { display: flex; flex: 1; align-items: center; padding-top: 10px;}
+.booking-div .change { padding-left: 20px; position: relative; margin-left: 20px;}
+.change p { color: #333; font-size: 15px;}
+.booking-div .change:before { content: '';  background: #999; position: absolute; left: 0px; width: 1px; height: 100%;}
+.traveller-details {background: #fff;box-shadow: 0px 0px 2px #ccc;margin-top: 10px;border-radius: 1px;position: relative;padding: 1.571rem;}
+.labl {text-align: right;padding-right: 10px !important;padding-top: 8px;font-weight: 500;font-size: 16px;}
+.txt2 {padding-bottom: 22px;margin-bottom: 22px !important;border-bottom: 2px solid #e4e4e4;color: #777;font-size: 14px;}
+.title-select .input-group-text,.add-gst .input-group-text,.ad-mobile .input-group-text {padding: 0px; background: none;  border: none; border-radius: 0px;}
+.title-select select,.add-gst select,.ad-mobile select{    height: 100%; border: 1px solid #ced4da;}
+.travel-info h4 {font-size: 20px;font-weight: 500;padding-bottom: 10px;}
+.travel-info p {font-size: 14px;padding-bottom: 20px;font-weight: 400;color: #555;}
+.travel-info p span.note {background: #e8f0fa;padding: 0px 5px;font-size: 15px;display: inline-block;color: #222;font-weight: 500;}
+.fare-title h4 {font-size: 26px;font-weight: 400;line-height: 40px;background-image: linear-gradient(to right, #845305,#ff9d02);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;}
+.fare-content {background: #fff;box-shadow: 0px 0px 2px #ccc;margin-top: 9px;border-radius: 1px;padding: 15px;}
+.base,.base-fare {font-size: 13px;margin-bottom: 10px;}
+.hidden-content .base,.hidden-content .base-fare,.hidden-content1 .base,.hidden-content2 .base,.hidden-content1 .base-fare,.hidden-content3 .base-fare{ font-size: 12px; }
+.hidden-content,.hidden-content1,.hidden-content2 {display: none;background: #f1f1f1;padding: 10px 10px;margin-bottom: 10px;}
+div#flip {cursor: pointer;margin-bottom: 5px;}
+div#flip1 {cursor: pointer;margin-bottom: 4px;}
+div#flip2 {cursor: pointer;margin-bottom: 4px;}
+.total-fare { background: #eee; padding: 10px 15px;display: flex; justify-content: space-between; box-shadow: 0px 0px 2px #ccc;font-size: 17px;}
+.add-gst {background: #fff;box-shadow: 0px 0px 2px #ccc;margin-top: 10px;border-radius: 1px;position: relative;padding: 1.571rem;}
+.add-inner {display: flex;}
+.add-txt {flex: 1;}
+.add-txt h4 {font-size: 16px;font-weight: 500;}
+.icon-div {font-size: 25px;padding-right: 10px;}
+.add-txt p {font-size: 14px;font-weight: 300;}
+.toggle{display:inline-block;background: #ff9d02;color: #fff;border-radius: 5px;width: auto;padding: 8px 16px;text-align: center;cursor: pointer;}
+.toggle.expanded{background:url("../images/close.png");background-size: 20px;background-repeat:no-repeat;width: 20px;height: 20px;}
+.toggle.expanded p{ font-size:0px;}
+.content {border-top: 1px solid #ddd;padding-top: 20px;margin-top: 20px;}
+button.gst-btn {background: #ff9d02;color: #fff;border-radius: 5px;width: auto;padding: 8px 16px;text-align: center;cursor: pointer;border: none;}
+.proceed {   text-align: center; padding: 15px 0px 0px;}
+.proceed a { display: inline-block; background: #ff9d02; color: #fff; border-radius: 5px; width: auto; padding: 8px 16px; text-align: center; cursor: pointer;}
+.airline-section {padding: 6px 30px;display: flex;flex-wrap: wrap;align-items: center;border: 1px solid #e5e5e5;border-top-color: rgb(229, 229, 229);border-top-style: solid;border-top-width: 1px;border-top: 0px;overflow: hidden;}
+.airline-slider {flex: 1;max-width: 85%;}
+#airlineSlider .owl-nav .owl-prev {position: absolute;top: 50%;left: -9px;outline: none;font-size: 40px;transform: translate(0px,-50% );color: #919191;}
+#airlineSlider .owl-nav .owl-next{position: absolute;top: 50%;right: -10px;outline: none;font-size: 39px;transform: translate(0px,-50% );color: #919191;}
+#airlineSlider .owl-nav .owl-prev span,#airlineSlider .owl-nav .owl-next span {background: #fff;}
+.airlineItem {text-align: left;display: flex;align-items: center;}
+.airlineItem a {display:flex;}
+.airlineImg img {max-width: 30px;}
+.flight-per-adult p small {color: #999;}
+#airlineSlider {padding: 0px 10px;}
+.flight-per-adult {max-width: 15%;width: 15%;text-align: center;background: #e8f0fa;text-align: center;border-bottom: 2px solid #00b8f8;}
+.airline-listing {display: flex;}
+.airline-listing > div {width:50%}
+.airline-listing .flight-head {background: none;border: none;}
+.airlineContent {font-size: 12px;padding-left: 4px;}
+.airline-listing .flight-title {padding: 0px;flex: 0;}
+.airline-listing .flight-Btitle {flex-direction: column;width: 20%;flex: 0;min-width: 20%;}
+.airline-listing .flight-logo {width: 31px;margin-right: 0px;margin-bottom: 4px;}
+.airline-listing .flight-name {font-size: 12px;}
+.airline-listing .flight-price1 {font-size: 10px;}
+.airline-listing .flight-head > div {font-size: 13px;width: 20%;min-width: 20%;}
+.airline-listing .flight-inner > div {width: 17%;/* min-width: 4%; */font-size: 14px;text-align: center;}
+.airline-listing .flight-inner div.flight-Bdur p {font-size: 12px;line-height: normal;}
+.flight-from,.flight-to {  padding: 10px;}
+.flight-from .left-div li:first-child,.flight-to .left-div li:first-child {  padding-left: 0px;}
+.flight-from .left-div,.flight-to .left-div {min-width: unset;flex: 1;}
+.flight-from .left-div li,.flight-to .left-div li {padding: 0px 15px;vertical-align: top;position: relative;display: inline-block;}
+.flight-from .left-div li i,.flight-to .left-div li i {  position: absolute;  top: 0px;  right: -8px;}
+.right-div a.next-date,.right-div a.previous-date {background: #f9f9f9;border: 1px solid #eee;padding: 7px;font-size: 13px;line-height: normal;display: inline-block;margin-left: 3px;}
+.right-div a.next-date i,.right-div a.previous-date i {line-height: unset;padding-left: 3px;font-size: 14px;}
+a#chooseDateBtn,a#chooseDateBtn1 { background: #f9f9f9; border: 1px solid #ddd; padding: 5px; height: auto; line-height: normal; display: inline-block; position: relative;}
+a#chooseDateBtn i,a#chooseDateBtn1 i { padding: 0px; text-align: center; font-size: 17px;}
+.choosedatepicker { position: absolute; top: 34px; right: 0px; z-index: 9999999995;}
+.right-div { position: relative;}
+.right-div .custom-checkbox .custom-control-label::before {top: .10rem;width: 1.3rem; height: 1.3rem; border: 2px solid #ff9d02; background-color: #fff;}
+.right-div .custom-checkbox .custom-control-input:checked~.custom-control-label::before { background-color: #ff9d02;}
+.right-div .custom-control-label::after {top: .10rem; height: 1.3rem; width: 1.3rem;}
+.roundbook{position: fixed;width: 100%;margin:auto;bottom:0;height: 15px;z-index: 2;background: #5791de center top repeat-x scroll;height: auto;overflow: hidden;}
+.roundbook-fixed {display: flex;align-items: center;}
+.roundbook-inner {display: flex;}
+.roundbook-fixed > div {width: 33.3%;padding-left: 10px;}
+.round-title {display: flex;color: #fff;font-weight: 600;}
+.round-title .round-logo {max-width: 30px;border: 1px solid #fff;margin-right: 3px;border-radius: 3px;overflow: hidden;}
+.round-rest {display: flex;padding-left: 0px;color: #fff;}
+.round-rest > div {padding: 0px 2px;font-size: 15px;margin: 0px 8px;}
+.round-logo img {max-width: 30px;border: 1px solid #fff;border-radius: 2px;overflow: hidden;}
+.roundbook-fixed > div:last-child {border-right: 0px;}
+.round-depart {position: relative;}
+.long-arrow {position: absolute;top: 4px;right: -13px;font-size: 10px;}
+.roundbook-inner1 {display: flex;justify-content: space-between;align-items: center;}
+.round-total {color: #fff;}
+.round-amt {font-size: 17px;font-weight: 600;}
+.round-btn,.flight-Bbtn a {background: #ff9d02;color: #fff;border-radius: 5px;width: auto;padding: 8px 16px;text-align: center;}
+.flight-body-main .custom-control.custom-radio {padding: 0px;width: 100%;}
+.flight-body-main label.custom-control-label {width: 100%;}
+.flight-body-main .custom-control-label::before,.flight-body-main .custom-control-label::after {left: auto;right: 10px;top: 30px;width: 1.3rem;height: 1.3rem;}
+.airline-from .flight-Bprice {padding-right: 6px;}
+.roundbook-fixed .roundbook-innerm {width: 66.7%;display: flex;align-items: center;}
+.roundbook-fixed .roundbook-innerm > div {width: 50%;padding: 15px 10px;border-right: 1px solid #fff;}
+.airline-listing .flight-inner > div.flight-Btitle{text-align: left;}
+.touriests_count,.touriests_count1{color: #666;box-sizing: border-box;background: #fff none repeat scroll 0 0;border: 1px solid #d1d1d1;left: 0;padding: 10px;position: absolute;text-align: left;top: 49px;width: 240px;z-index: 2;display: none;border-radius: 3px;z-index: 99;}
+#tour-count ,#tour-count1{padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;color: #495057;background-color: #fff;background-clip: padding-box;border: 1px solid #ced4da;
+display: flex;cursor: pointer;position: relative;justify-content: space-between;align-items: center;}
+.tourist-val {max-width: 140px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.touriests_count:after,.touriests_count1:after{border-left: 8px solid transparent;content:''; width: 0; height: 0; border-right: 8px solid transparent; border-bottom: 8px solid #fff; position:absolute; left:12px; top:-8px;}
+.touriests_count:before,.touriests_count1:before{border-left: 10px solid transparent;content:''; width: 0; height: 0; border-right: 10px solid transparent; border-bottom: 10px solid #ccc; position:absolute; left:10px; top:-10px;}
+.touriests_count .inputblock,.touriests_count1 .inputblock{width: 70%;line-height: 20px;text-align: left;font-size: 13px;vertical-align: middle;}
+.touriests_count input,.touriests_count1 input{height:20px;width: 20px;text-align: center; color:#666; font-size: 13px; background:#fff; border:none; vertical-align: middle;}
+.minus, .plus{width: 20px;height: 20px;background: #016dff;color:#fff;text-align: center;font-size: 15px;vertical-align: middle;cursor: pointer;font-weight: 500;display: inline-block;line-height: 19px;}
+.tour-content {display: flex;margin-bottom: 10px;justify-content: space-between;border-bottom: 1px solid #ddd;padding-bottom: 10px;width: 100%;flex-wrap: wrap;}
+.signs {width: 30%;text-align: right;}
+.tour-content .custom-control.custom-radio {width: 100%;display: block;clear: both;min-width: 100%;}
+.tour-content:last-child {border-bottom: 0px;}
+.flight-search input.form-control:focus {background: #5791de;}
+.modify:focus{    background: #ff9d02;    color: #fff;}
+.flight-search div#tour-count {background: #5791de;color: #fff;border: none;outline: none;border-right: 1px solid #cedff5;height: 50px;}
+.flight-search .touriests_count {top: 80px;}
+.trip-radio {display: flex;align-items: center;padding-bottom: 15px;width: 100%;border-bottom: 1px solid #eee;margin-bottom: 20px;}
+.trip-radio .custom-control.custom-radio {margin-right: 11px;}
+span.inputblock {width: 70%;line-height: 20px;text-align: center;font-size: 13px;vertical-align: middle;}
+span.inputblock input {height: 20px;width: 20px;text-align: center;color: #666;font-size: 13px;background: #fff;border: none;vertical-align: middle;}
+.value-inc {display: flex;height: 100%;align-items: center;justify-content: space-between;border: 1px solid #ddd;    flex-basis: 100%; flex-wrap: wrap;    min-height: 17px;    max-height: 45px;}
+.value-inc .minus,.value-inc .plus {background: #ddd;color: #000;display: flex;align-items: center;justify-content: center;font-size: 22px;width: 15%;height: 100%;}
+#myModal .modal-header, #hotel-modify .modal-header,#select-seat .modal-header,#forget .modal-header{background: #e8f0fa;padding: 9px 15px;display: flex;align-items: center;color: #ff9d02;}
+#myModal .modal-header h4.modal-title,#forget .modal-header h4.modal-title,#hotel-modify .modal-header h4.modal-title,#select-seat .modal-header h4.modal-title {font-size: 20px;font-weight: 500;color: #ff9d02;}
+#myModal .modal-header button.close,#hotel-modify .modal-header button.close {color: #ff9d02;}
+#myModal .form-group,#hotel-modify .form-group {margin-bottom: 30px;}
+.service-div {background: #fff;box-shadow: 0px 0px 2px #ccc;margin-top: 10px;border-radius: 1px;position: relative;padding: 1.571rem;}
+.select-seat, .add-meal, .add-baggage {display: inline-block;background: #ff9d02;color: #fff !important;border-radius: 5px;width: auto;padding: 8px 16px;text-align: center;cursor: pointer;border: none; margin: 0px 10px;}
+.seat-div {border-top: 1px solid #ddd;margin-top: 20px;padding-top: 10px;display: none;}
+.meal-add,.baggage-add{border-top: 1px solid #ddd;margin-top: 20px;padding-top: 10px;display: none;}
+.seat-div h3,.meal-add h3, .baggage-add h3{font-size: 16px;color: #777;font-weight: 400;margin-bottom: 10px;}
+.seat-div p ,.meal-add p , .baggage-add p{height: 40px;line-height: 40px;padding-left: 40px;}
+/* .meal-add select.form-control, .baggage-add select.form-control {    width: 30%;    margin-left: 40px;} */
+#seat-select {margin-left: 40px;display: inline-block;background: #dededd;color: #000;border-radius: 5px;width: auto;padding: 8px 16px;text-align: center;cursor: pointer;border: none;}
+.add-ons {padding: 20px 0px;}
+.add-ons h4 {font-size: 16px;font-weight: 500;padding-bottom: 15px;}
+.add-ons h4 span {font-weight: 400;}
+.add-ons .custom-control.custom-checkbox {padding-bottom: 20px;padding-right: 20px;}
+.amount-toal {border-top: 1px solid #ccc;padding-top: 10px;margin-top: 10px;font-size: 22px;}
+.amount-toal p {font-size: 17px;}
+.overlay {background: rgba(0,30,53,0.7);position: fixed;z-index: 998;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;transition: all 0.5s ease-in-out;display: none;}
+.seatside-panel{position: fixed;z-index: 99;top: 0px;left: auto;width: 600px;right: 0px;height: 100vh;background: #fff;display: none;}
+.overlay.active {display: block;opacity: 1;}
+.dismiss-menu {position: absolute;top: 0px;left: -65px;display: inline-block;width: 65px;height: 65px;line-height: 65px;text-align: center;
+color: #fff;background: #333;font-size: 24px;}
+.select-seat-title h4 {font-size: 21px;position: relative;background-color: #f8f8f8;margin: 0;padding: 15px;border-radius: 3px 3px 0 0;border-bottom: 1px solid #cdcecf;font-weight: 400;}
+.seat-layout-inner { background: #fff; border: 1px solid #FFF; width: 100%; padding: 5px 10px; display: flex; height: 100%;  overflow-y: auto;}
+.seat-layout-left { width: 80%;}
+.seat-layout-right { width: 20%;padding: 0px 10px;}
+.departure-info { display: flex; flex: 1;}
+.depart { background: #f4f4f4; font-size: 11px; line-height: 19px; padding: 2px 5px; text-transform: uppercase;}
+.city-code-holder { overflow: hidden;  padding: 0px 20px;}
+span.seprator {color: #000000;  margin: 0px 10px;  width: 1px;}
+span.reach-day { margin: 0px 5px; color: #9a9a9a;}
+.btn-section .deck-select{  color: #333; background: #d1cece; border:none; padding: 5px 10px;}
+.seat-type { overflow: hidden;  text-transform: capitalize; margin: 15px 0 0;  float: left;}
+.seat-type ul li { margin: 10px 3px; width: 100%; font-size: 12px; display: inline-flex; align-items: center; line-height: normal;}
+.seat-type ul li span {  width: 70%;  display: inline-block;}
+.seat-type ul li span.seat-li { background: url(../images/seat-types.png);cursor: pointer; background-repeat: no-repeat; width: 20px; position: relative;  background-position: -26px 0px; height: 20px;  margin-right: 5px;}
+.seat-type ul li span.seat-li.booked {  background-position: 0px 0px;}
+.seat-type ul li span.seat-li.selected { background-position: -51px 0px;}
+.seat-type ul li span.seat-li.comfort { background-position: -103px -1px;}
+.seat-type ul li span.seat-li.lavatory { background-position: -130px 0px;}
+.seating-area {  position: relative; border: 1px solid #dadada;  border-radius: 9px; -moz-border-radius: 9px;  -webkit-border-radius: 9px; margin-top: 20px;}
+.front { left: 25px; top: 32px;  padding-bottom: 5px;position: absolute;background: #fff;  z-index: 9;}
+.back { position: absolute;  z-index: 9; right: 18px; top: 44%;}
+.wing-left { position: relative; top: -20px;  margin-left: 150px;  background: #f6efef; width: 240px; height: 28px; clear: both; transform: skew(-45deg, 0deg); -webkit-transform: skew(-45deg, 0deg);}
+.wing-right { position: relative;  bottom: -25px; margin-left: 150px; background: #f6efef; width: 240px; height: 25px;  transform: skew(45deg, 0deg);  -webkit-transform: skew(45deg, 0deg); -moz-transform: skew(45deg, 0deg);}
+.wing-left span {  position: absolute; transform: skew(45deg, 0deg); -webkit-transform: skew(45deg, 0deg); -moz-transform: skew(45deg, 0deg); left: 35%; top: -2px;}
+.seating-areainner {display: inline-block; width: 85%;position: relative; margin: 0 5%; padding: 20px 0 20px 30px;overflow-x: auto;overflow-y: hidden; white-space: nowrap;}
+.front .portion { transform: translate(-50%, -50%) rotate(-90deg);  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+    -moz-transform: translate(-50%, -50%) rotate(-90deg); position: absolute;  top: 50%;}
+.front .column { padding: 23px 0 15px 15px;}
+.back .portion {  transform: translate(-50%, -50%) rotate(-90deg);  -webkit-transform: translate(-50%, -50%) rotate(-90deg); -moz-transform: translate(-50%, -50%) rotate(-90deg);position: absolute; top: 50%;}
+.seats-layoutinner ul li.seat-li.right {  position: absolute; z-index: 2;width: 23px; text-align: center;  top: -25px;}
+.seats-layoutinner ul { position: relative; display: inline-block; margin: 0 4px; padding: 0; vertical-align: middle;}
+.seats-layoutinner ul li.seat-li { width: 23px; position: relative; height: 22px; text-align: center;}
+.front .column li { width: 21px; position: relative; height: 22px;}
+.seats-layoutinner {  margin: 5px 0;}
+.seats-layoutinner ul li.seat-li.left { position: absolute;
+    z-index: 2; width: 23px; text-align: center;
+    bottom: -25px;
+}
+
+.seats-layoutinner ul li.seat-li.booked {
+    background: url(../images/seat-types.png) no-repeat;
+    cursor: pointer;
+    background-position: 2px 0;
+    font-size: 0px;
+    list-style: none;
+    border: transparent 1px solid;
+    cursor: no-drop;
+}
+
+
+.seats-layoutinner ul li.seat-li.free {
+    background: url(../images/seat-types.png) no-repeat;
+    cursor: pointer;
+    background-position: -23px 0;
+    font-size: 0px;
+    list-style: none;
+    border: transparent 1px solid;
+}
+
+.seats-layoutinner ul li.seat-li.paid {
+    background: url(../images/seat-types.png) no-repeat;
+    cursor: pointer;
+    background-position: -100px 0;
+    font-size: 0px;
+    list-style: none;
+    border: transparent 1px solid;
+}
+
+.seats-layoutinner ul li.seat-li.selected {
+    background: url(../images/seat-types.png) no-repeat;
+    cursor: pointer;
+    background-position: -48px 0;
+    font-size: 0px;
+    list-style: none;
+    border: transparent 1px solid;
+}
+
+.seating-area ::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+.seating-area ::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+.seating-area ::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+.seat-layout .proceed {
+    position: relative;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #cdcecf;
+    text-align: right;
+    border-top: 1px solid #cdcecf;
+}
+
+a.hoteladdRoom {
+    color: #ff9d02;
+    border: 1px solid #ff9d02;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+a.hoteladdRoom:hover{ background:#ff9d02; color:#fff;}
+
+.be-ddn-footer {
+    text-align: right;
+}
+
+.be-ddn-footer a {
+    display: inline-block;
+    background: #ff9d02;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.byname .input-group-addon {
+    cursor: pointer;
+}
+
+.hotel-search .center-div {
+    text-align: center;
+}
+
+.hotel-search .center-div p.detail-para {
+    color: #444;
+    font-size: 12px;
+}
+
+.hotel-search .center-div p.detail-para span.seprator {
+    margin: 0px 3px;
+}
+.hotel-head {
+    padding: 11px 10px;
+    display: flex;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-top: 0px;
+}
+
+.sorted-by {
+    min-width: 30%;
+}
+
+.sorte-inner {
+    min-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.hotel-body {
+    padding: 10px;
+}
+
+.hotel-body-main {
+    transition: all ease 0.3s;
+    margin-bottom: 20px;
+    background: #f8f8f6;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px 3px 0px 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.hotel-image-box {
+    min-width: 30%;
+    border-radius: 3px 0px 0px 3px;
+    max-height: 195px;
+}
+
+.hotel-image-box img {
+    border-radius: 3px 0px 0px 3px;
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+
+.hotel-inner {
+    min-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.sorted-star {
+    min-width: 60%;
+}
+
+.sorted-price {
+    min-width: 40%;
+    text-align: right;
+}
+
+.hotel-content {
+    min-width: 60%;
+}
+
+.hotel-price {
+    min-width: 40%;
+    text-align: right;
+}
+
+.hotel-name p {
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+.hotel-rating p {
+    color: #ff9d02;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.hotel-location p {
+    font-size: 13px;
+    color: #333;
+}
+
+.hotel-decription p {
+    color: #777;
+    font-size: 12px;
+    padding-top: 7px;
+}
+
+.hotel-main-price p {
+    font-size: 24px;
+}
+
+.hotel-main-price p i {
+    font-size: 20px;
+}
+
+.hotel-book-btn a.book-btn {
+    font-size: 15px;
+    display: inline-block;
+    padding: 7px 15px;
+    background: #ff9d02;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+.flight-search #tour-count1 {
+    background: #5791de;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-right: 1px solid #cedff5;
+    height: 50px;
+}
+
+.flight-search .touriests_count1 {
+    top: 80px;
+}
+
+.hotel-desc h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hotel-desc h3 span.hotel-rate {
+    font-size: 12px;
+    color: #ff9d02;
+}
+.inout-details {
+    margin-top: 20px;
+    width: 100%;
+    vertical-align: top;
+    display: flex;
+}
+.checkin-date,.checkout-date {
+    width: 103px;
+    height: 113px;
+    border-radius: 2.8px;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+    text-align: center;
+    position: relative;
+    margin-right: 8px;
+    color: #666;
+    display: inline-block;
+}
+.check-top {
+    padding: 10px;
+}
+
+span.date-value {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    display: block;
+}
+
+
+
+.month-value {
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 1.39;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px 0;
+}
+.all-deatls {
+    padding: 0px;
+    vertical-align: top;
+    flex: 1;
+}
+
+.days-nights {border-bottom: 1px solid #999;padding-bottom: 6px;margin-bottom: 6px;}
+
+.days-nights p {
+    font-size: 20px;
+}
+span.room-numb {
+    min-width: 70px;
+    display: inline-block;
+}
+.room-value {
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+.disp-table {
+    display: table;
+    margin-top: 20px;
+}
+
+.disp-table-cell-left {
+    display: table-cell;
+}
+
+.disp-table-cellright {
+    display: table-cell;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.complementry i {
+    color: green;
+    font-size: 12px;
+}
+
+.cancelation {
+    margin-top: 10px;
+    background: #eee;
+    padding: 10px;
+}
+
+.showpanel {
+    display: none;
+    padding-top: 10px;
+    color: #333;
+}
+
+span.open {
+    color: #016dff;
+    cursor: pointer;
+}
+.bus-seats {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: .39rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    align-items: center;
+}
+
+.bus-seats span.inputblock {
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.bus-seats span.inputblock input {
+    font-size: 18px;
+}
+.flight-search .bus-seats {
+    background: #5791de;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-right: 1px solid #cedff5;
+    height: 50px;
+}
+.flight-search .bus-seats input{ color:#fff; background:#5791de; }
+.bus-heading {
+    padding: 11px 10px;
+    display: flex;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-top: 0px;
+}
+
+.rest-details {
+    display: flex;
+    max-width: 70%;
+    flex: 1;
+    padding-right: 5px;
+}
+
+.operator-name {
+    min-width: 30%;
+    padding-left: 5px;
+}
+
+.rest-details > div {
+    min-width: 25%;
+    text-align: center;
+}
+.bus-heading a {color: #000; font-size: 14px;}
+.bus-body-main {padding: 10px;}
+.bus-inner {display: flex;background: #fafafa;border: 1px solid #eee;border-radius: 3px;padding: 5px 2px;margin-bottom: 20px;}
+.bus-inner .operator-name p { color: #808080;font-size: 14px; padding-bottom: 5px;}
+.bus-inner .bus-seats {background: #ff9d02;color: #fff;border-radius: 5px;padding: 5px 12px;text-align: center;border: none;width: auto;margin: 0px auto;cursor: pointer;display: inline-flex;}
+.bus-inner .rest-details { font-size: 17px;}
+.rest-details > div.bus-price p {padding-bottom: 10px;font-size: 20px;}
+.rest-details > div.bus-price p i{ font-size:16px}
+
+#select-seat .front,#select-seat .back {
+    top: 50%;
+}
+
+#select-seat .seat-layout-left {
+    width: 70%;
+}
+
+#select-seat .seat-layout-right {
+    width: 30%;
+    border-left: 1px solid #ccc;
+    margin-left: 1%;
+    overflow: visible;
+}
+
+#select-seat .seat-type ul li {
+    width: 23%;
+}
+
+.seat-type ul li span.seat-li.ladies {
+    background-position: -76px 0px;
+}
+
+#select-seat .seat-layout-inner {
+    padding: 0px;
+    overflow: visible;
+}
+
+#select-seat .seat-type {
+    width: 100%;
+}
+.bus-detils p { font-size: 13px; padding-bottom: 5px;color: #444;}
+.bus-detils ul li { display: inline-block; padding-right: 4px; padding-bottom: 10px; padding-top: 10px; font-size: 12px;  color: #777;}
+.chosse-board { border-top: 1px solid #eee;    padding-top: 10px;}
+.chosse-board label {padding-bottom: 5px;}
+.confirm-btn { text-align: right;}
+.confirm-btn a{background: #ff9d02;color: #fff;border-radius: 5px;padding: 5px 12px;text-align: center;border: none;width: auto;margin: 0px auto;cursor: pointer;}
+.bottom-border {  border-bottom: 1px solid #eee;padding-bottom: 10px;}
+.steps-booking{width: 100%;display: flex;justify-content: center;margin-bottom: 50px;}
+.back-base {
+    height: 2px;
+    background-color: #a6e1a6;
+    width: 94%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.back-base .review-itinarary, .back-base .travelr-info {
+    color: #333;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+}
+.back-base .travelr-info{ left:50%}
+
+.back-base .make-payment {
+    color: #333;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+}
+
+.back-base .review-itinarary strong, .back-base .travelr-info strong,.back-base .make-payment strong {
+    background-color: #f8f9f9;
+    border: 2px solid #f8f9f9;
+    border-radius: 50%;
+    box-shadow: 0 0 4px #2abd2a inset;
+    color: #2abd2a;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: -20px;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+}
+
+.back-base .review-itinarary span, .back-base .travelr-info span,.back-base .make-payment span {
+    font-size: 13px;
+    color: #999;
+    margin-top: 24px;
+    margin-left: -27px;
+    width: 100%;
+    position: relative;
+    top: 25px;
+}
+
+.back-base .make-payment span {
+    color: #999;
+    font-size: 14px;
+    text-align: right;
+    margin-right: -22px;
+}
+
+.back-base .make-payment strong {
+    right: 0px;
+}
+.depart-bus {
+    position: absolute;
+    top: 12px;
+    background: #ccc;
+    padding: 5px 10px;
+}
+.back-base .review-itinarary.current, .back-base .review-itinarary.active ,.back-base .travelr-info.current, .back-base .travelr-info.active {
+    border-top: 2px solid #2abd2a;
+}
+.back-base .review-itinarary.current strong,.back-base .review-itinarary.active strong ,.back-base .travelr-info.active strong,.back-base .travelr-info.current strong {
+    background: #2abd2a;
+    color: #fff;
+}
+.bus-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.operator-detail p{ font-size:13px}
+.operator-detail p.operator-title {font-weight: 500;font-size: 15px;}
+.book-btn a {
+    background: #ff9d02;
+    border: 0px;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 7px;
+    outline: none;
+    display: inline-block;
+}
+button.btn.btn-fb {
+    background: #5470af;
+    color: #fff;
+    border-radius: 3px;
+}
+
+button.btn.btn-fb i {
+    padding-right: 4px;
+    font-size: 14px;
+}
+
+.right-facebook {
+    height: 100%;
+    border-left: 1px solid #ddd;
+    position: relative;
+    padding: 100px 0px;
+}
+
+span.or-login {
+    position: absolute;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    line-height: 40px;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.forget-pas {
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #777;
+    outline: none;
+    cursor: pointer;
+}
+
+.forget-pas:focus {
+    outline: none;
+}
+#forget form label {
+    margin-bottom: 10px;
+}
+.forget-submit {
+    background: #ff9d02;
+    border: 0px;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 7px;
+    outline: none;
+}
+.trveler-label label {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.page-title-wrapper {
+    background: #e8f0fa;
+    padding: 30px 0px;
+    text-align: center;
+}
+
+.page-title ul li {
+    display: inline-block;
+    position: relative;
+}
+.page-title ul li a,.page-title ul li span{color:#333;font-size:13px;position: relative;padding: 15px;}
+.page-title ul li span.arrow-icon {
+    position: absolute;
+    top: 2px;
+    right: -6px;
+    padding: 0px;
+}
+.form-main {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.form-inner {
+    width: 50%;
+    padding: 50px;
+}
+
+.form-inner label {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.form-inner input {
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+.form-inner button {
+    background: #ff9d02;
+    border: 0px;
+    padding: 7px 16px;
+    border-radius: 3px;
+    color: #fff;
+}
+ul.inline-list {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+ul.inline-list li a {
+    color: #ff9d02;
+}
+.form-inner-register {
+    padding: 50px 0px;
+}
+
+.form-inner-register label {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.form-inner-register input {
+    /*border: 2px solid #ddd;
+    border-radius: 3px;*/
+}
+
+.packages-agents i{
+    font-size: 89px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    padding: 35px 10px !important;
+}
+
+.form-inner-register button {
+    background: #fff;
+    border: 0px;
+    padding: 7px 16px;
+    border-radius: 3px;
+    color: #79797e;
+    border: 2px solid #ddd;
+    border-radius: 3px;
+}
+
+.form-inner-register input[type="submit"] { 
+    background: #ff9d02;
+    border: 0px;
+    padding: 7px 16px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.topright li.dropdown, .topright li.dropdown .btn-primary,.topright li.dropdown .btn-primary:focus,.topright li.dropdown .btn-primary:hover {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.topright li.dropdown ul.dropdown-menu.show {right: 0px;left: auto !important;padding: 0px;border-radius: 0px;background: #e8f0fa;}
+
+.topright li.dropdown ul.dropdown-menu.show li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+}
+
+.topright li.dropdown ul.dropdown-menu.show li:last-child a {
+    border: 0px;
+}
+
+
+#body-row {
+    margin-left:0;
+    margin-right:0;
+}
+
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+    border-radius: 0px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: white;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {    font-size: 0.9rem;}
+.sidebar-separator-title {    background-color: #333;    height: 35px;}
+.sidebar-separator {    background-color: #333;    height: 25px;}
+.logo-separator { background-color: #333; height: 60px;}
+.user-title-wrapper {    padding: 5px 0px;    background: #e8f0fa;}
+.user-panel {    padding: 15px 0px;}
+.sidebar-expanded ul.list-group {    border-radius: 0px;}
+.sidebar-expanded ul.list-group .list-group-item {    border-radius: 0px;}
+#body-row .col {    padding: 0px;    border-radius: 0px;}
+#body-row .col .card {    border-radius: 0px;    border: 1px solid #eee;}
+#body-row .col .card h4.card-header {    border-bottom: 1px solid #eee;    font-weight: 400;    text-transform: uppercase;    font-size: 18px;    color: #666;}
+.profile-title h3 {    font-weight: 400;    text-transform: uppercase;    font-size: 18px;    color: #666;    margin-bottom: 6px;}
+.profile-main {    display: flex;    border: 1px solid #eee;    border-radius: 3px;    padding: 15px;    margin-bottom: 20px;}
+.profile-inner {    display: flex;    width: 100%;}
+.profile-left {    width: 50px;    height: 50px;    background: #ff9d02;    text-align: center;    color: #fff;    line-height: 50px;    border-radius: 100%;    margin-right: 15px;}
+.profile-right {    display: flex;    flex: 1;    justify-content: space-between;}
+.profile-right-detail h4 {    font-size: 23px;    font-weight: 400;    padding-bottom: 5px;}
+.profile-right-detail p {    font-size: 13px;    padding-bottom: 1px;    font-weight: 400;    color: #666;}
+.profile-right-detail p i {    margin-right: 3px;    font-size: 11px;}
+.profile-right-detail p i.fa.fa-phone {-webkit-transform: scaleX(-1);transform: scaleX(-1);}
+a.profile-editbtn {    padding: 6px 15px;    background: #ff9d02;    text-align: center;    color: #fff;    display: inline-flex;    border-radius: 3px;    font-size: 14px;    align-items: center;}
+a.profile-editbtn i {    padding-left: 5px;    font-size: 13px;}
+.edit-profile-form {    border: 1px solid #eee;    border-radius: 3px;    padding: 15px;    margin-bottom: 20px;}
+.form-submit {    padding: 6px 15px;    background: #ff9d02;    text-align: center;    color: #fff;    display: inline-block;    border-radius: 3px;    font-size: 14px;    border: none;}
+.address-space select,.address-space input {    margin-bottom: 1rem;}
+.panel-button{ display: none }
+p.inline-list {  padding-top: 15px;  margin-top: 15px;  border-top: 1px solid #ccc;    font-size: 16px;}
+a.agent-btn {    display: inline-block;    background: #ff9d02;    border: 0px;    padding: 7px 16px;    border-radius: 3px;    color: #fff;    margin-top: 10px;}
+.form-inner-register .input-group-btn select {  border-color: #ddd; border-right:0px;   margin-bottom: 0px; border-width:2px;   padding: 0.5rem .75rem; font-size: 1rem;    line-height: 1.5;   outline: none;  box-shadow: none;}
+.info-title h3 {    border-bottom: 1px dotted #ddd;    margin-bottom: 20px;    padding-bottom: 5px;    font-size: 20px;    font-weight: 500;    text-transform: uppercase;}
+.form-inner-register input[type="file"] {    border: none;    padding-left: 0px;}
+.agent-info {    margin-bottom: 20px;}
+.about-message {    padding: 30px;}
+.about-inner {    text-align: center;}
+.about-inner h2 {    font-size: 32px;    text-align: center;    margin: 20px 0px;    font-weight: 400;}
+.about-inner p { font-size: 14px;font-weight: 300; line-height: 29px; margin-bottom: 30px; color: #666;}
+
+.modal-top {
+    display: flex;
+    justify-content: space-between;
+}
+.modal-top .center-div ul li:first-child {
+    padding-left: 0px;
+}
+
+span.schedule {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.flight-price p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.flight-price p span {
+    font-size: 13px;
+    color: #666;
+    font-weight: 300;
+}
+
+.modal-top .right-div .flight-price {
+    text-align: right;
+}
+
+.modal-top .flight-Bbtn {
+    text-align: right;
+    margin-top: 10px;
+}
+.modal-tabs .tab-content {
+    background: transparent;
+    border-top: 1px solid #e8f0fa;
+    border-radius: 0px;
+}
+
+.modal-tabs ul.nav.nav-tabs li a {
+    padding: 9px;
+    border: 1px solid #e8f0fa;
+    display: inline-flex;
+    position: relative;
+    border-bottom: 0px;
+    color: #000;
+    text-transform: uppercase;
+    margin-right: 2px;
+}
+
+.modal-tabs ul.nav.nav-tabs {
+        padding-left: 0px;
+}
+
+.modal-tabs ul.nav.nav-tabs li a.active:before {
+    border-top: 3px solid #003780;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+}
+.modal-tabs .tab-content>.active {
+    display: block;
+    opacity: 1;
+}
+
+.modal-flight .modal-header {
+    background: #F9F9F9;
+    border-bottom: 1px solid #cdcecf;
+    position: relative;
+    padding: 6px 35px 4px 20px;
+}
+
+.modal-flight .modal-header h4.modal-title {
+    font-weight: 400;
+}
+
+.modal-tabs table.table th,.modal-tabs table.table td {
+    padding: 6px;
+    font-weight: 300;
+}
+
+.modal-tabs table.table th h3.bold {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+span.select-rule.sort-active {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #003780;
+    margin-bottom: 23px;
+}
+
+span.select-rule.sort-active:before {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #003780;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    content: "";
+    transform: translate(-50%);
+}
+
+
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;        -webkit-transition: height .5s ease;
+        -webkit-transition-delay: .4s;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#555;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+.dropdown-submenu {
+    position: relative;
+}
+.nav-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu1 {color: #fff;margin-left: 30px;display: flex;}
+.main-menu1 li a, .main-menu1 li.nav-item.dropdown a {color: #000;font-size: 14px;transition: all ease 0.4s;padding: 0px 30px;text-align: center;display: flex;flex-direction: column;position: relative;}
+
+.main-menu1 ul.dropdown-menu {background: white;border-radius: 0px;padding: 0px;width: 200px;position: absolute;}
+.main-menu1 ul.dropdown-menu li a { font-size: 14px; padding: 12px; display: block;}
+/*.main-menu1 li.dropdown ul.dropdown-menu li a:hover { color:#fff; background: #016dff;}*/
+.main-menu1 li.dropdown a.dropdown-toggle { position: relative;}
+.main-menu1 li.dropdown a:hover {
+    color: #000;
+}
+.navbar-expand-md .main-menu1 .navbar-nav .dropdown-menu li {
+    padding: 0px;
+}
+.main-menu1 li.dropdown li.dropdown-submenu a.dropdown-toggle:after { right: 25px;  top: 12px; border-left-color: #000;}
+li.dropdown.dropdown-submenu:hover .dropdown-menu {display: block;opacity: 1;visibility: visible;transform: none !important;left: 100% !important;top: 0px !important;}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu {
+    left: auto;
+    right: 0px !important;
+    padding: 0px;
+    border-radius: 0px;
+    width: 255px;
+    position: absolute;
+}
+
+button.btn.dropdown-toggle {
+    background: none;
+    border: 1px solid #ced4da;
+    /* color: #495057; */
+}
+
+.main-menu1 ul.navbar-nav {
+    margin: 0px auto;
+}
+
+.main-menu1 li a span, .main-menu1 li.nav-item.dropdown a span {
+    display: block;
+    color: #ff9d02;
+    font-size: 20px;
+}
+
+.main-menu1 li a spa, .main-menu1 li.nav-item.dropdown a spna {}
+
+.main-menu1 li a.dropdown-toggle:after {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+}
+
+.main-menu1 li.nav-item.dropdown  ul.dropdown-menu li a {
+    text-align: left;
+    padding: 10px;
+    display: block;
+}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item {
+    text-align: left;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item a {
+    padding: 10px;
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    width: inherit;
+}
+
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item a:after {
+    right: auto;
+    left: 0px !important;
+    position: absolute;
+    transform: rotate(-180deg);
+    top: 15px;
+}
+
+.agent-header{background-color: #fff;position: relative;}
+.agent-header .logo img {max-width: 160px;}
+
+.main-menu1 div#navbarCollapse, .main-menu2 div#navbarCollapse1 {
+    display: block;
+}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item ul.dropdown-menu {
+    left: -100% !important;
+    text-align: left;
+}
+
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item ul.dropdown-menu li {
+    text-align: left;
+}
+.agent-recent {
+    padding: 50px 0px;
+}
+
+.recent-title,.notify-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recent-title h3,.notify-title h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.recent-title p ,.notify-title p {
+    font-size: 16px;
+}
+
+.recent-booking {
+    background: #eee;
+    max-height: 350px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.recent-booking ul.nav.nav-tabs {
+    display: flex;
+    padding-left: 0px;
+    padding: 10px;
+}
+
+.recent-booking ul.nav.nav-tabs li {
+    flex: 1;
+}
+
+.recent-booking ul.nav.nav-tabs li a {
+    padding: 10px;
+    display: block;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    position: relative;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+}
+
+.recent-booking ul.nav.nav-tabs li:last-child a {
+    border-right: 0px;
+}
+
+.recent-booking ul.nav.nav-tabs li a.active:before {
+    content: '';
+    background: #016dff;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+}
+
+.recent-booking ul.nav.nav-tabs li.active a {
+    background: #ddd;
+}
+
+.recent-booking .tab-content {
+    background: #eee;
+    border-radius: 0px;
+    padding: 0px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.recent-booking .tab-content .table-resposnive {
+    background: #f6f6f6;
+    height: 100%;
+}
+
+.recent-booking .print,.recent-booking .close {
+    margin: 0px;
+    color: #000;
+    background: #dddddd;
+    width: 20px;
+    line-height: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    text-shadow: none;
+    opacity: 1;
+    float: none;
+}
+
+.recent-booking .print i,.recent-booking .close i {
+    font-size: 13px;
+}
+.notification {display: flex; background: #eee; height: 100%; max-height: 350px; overflow: hidden;}
+.notification ul.nav.nav-tabs li a { padding: 10px; display: block; background: #fff; color: #000; font-size: 15px; text-align: left; width: 100%; position: relative;}
+.notification ul.nav.nav-tabs li { display: block;width: 100%;  margin-bottom: 20px;}
+.notification ul.nav.nav-tabs { border-bottom: 0px; padding-left: 0px; display: block; min-width: 200px; padding: 10px;}
+.notification .tab-content {background: #f6f6f6; border-radius: 0px;  max-height: 400px; overflow-y: scroll;}
+.notification .tab-content p {padding-bottom: 20px;font-size: 14px;line-height: 25px;color: #666;}
+.notification ul.nav.nav-tabs li a.active:before {content: ''; background: #016dff; top: 0px;left: 0px; width: 100%;  height: 3px;position: absolute;}
+.dropdown-toggle::after{ vertical-align: middle; }
+.main-menu1 li.dropdown:hover .dropdown-menu{ display:block;}
+.confirm { display: flex;}
+.confirmIcon { width: 40px; height: 40px; background: transparent; border: 2px solid #04a704; text-align: center; line-height: 40px;
+    border-radius: 7px; color: #04a704; margin-right: 10px;}
+.confirmDeail h3 { font-size: 18px; line-height: 18px; font-weight: 500; margin-bottom: 5px;}
+.confirmDeail p { font-size: 13px;  padding: 4px 0px 0px;}
+.printBill { text-align: right;}
+.billBtn { background: #ff9d02; color: #fff;  border-radius: 5px; width: auto; padding: 8px 16px; text-align: center;
+    cursor: pointer; border: 1px solid #d0850e;}
+.bookingMessage { padding: 10px; font-size: 15px; background: #01132b; border-radius: 4px; margin: 10px 0px;  color: #fff;
+    line-height: 30px; letter-spacing: 1px;}
+.confirmContact h3, .bookingDetails h3 , .passengerDetails h3{ font-size: 18px; font-weight: 500; margin: 20px 0px 10px;  text-transform: uppercase;}
+.detainInner { background: #fff; padding: 20px; display: flex; box-shadow: 0px 0px 1px #ddd; border-radius: 5px;}
+.detailPhone, .detailEmail { display: flex; align-items: center; margin-right: 35px;}
+.phoneIcon i { width: 42px; height: 42px; text-align: center; line-height: 42px; background: rgba(76, 49, 5, 0.1);  display: block; padding: 0px; border-radius: 3px; margin-right: 20px; color: #ff9d02; transform: scaleX(-1);}
+.detailPhone .input-group-prepend { padding: 0px; margin: 0px; background: none;}
+.detailPhone .input-group-prepend .input-group-text,.detailPhone .input-group-prepend .input-group-text select {  padding: 0px; height: 100%; background: none; border: 0px;}
+.detailPhone .input-group-prepend .input-group-text select { margin-right: 10px;border: 1px solid #ccc;border-radius: 3px;padding: 10px; box-sizing: border-box;}
+.detailPhone input { border-radius: 3px;}
+.resend { color: #016dff; text-transform: uppercase; margin-left: 10px;}
+.fbookDetails { background: #fff;padding: 20px; display: flex; box-shadow: 0px 0px 1px #ddd;border-radius: 5px;}
+.flighNames { display: flex;}
+.flightDetail1 { min-width: 20%;}
+.flightLogo { margin-right: 10px;}
+.flightCompany p { font-size: 12px;    color: #333; line-height: normal;}
+.flightDetail1 p { font-size: 12px; color: #333;}
+.fbookDetails > div { border-left: 1px solid #ddd; padding-left: 10px;}
+.fbookDetails > div:first-child { border: 0px;}
+.flightPnr { min-width: 40%;}
+.flightType { text-align: center;}
+.flightType span { border-left: 1px solid #ddd;    padding: 0px 10px;}
+.brGreen { border: 1px solid #04a704; color: #04a704; margin: 10px; border-radius: 2px;}
+.flightType span:first-child { border: 0px;}
+.flighttoFrom { min-width: 40%; align-items: baseline;}
+.flightTakeof p { font-size: 13px; color: #333;}
+.flightTime { font-size: 12px; text-align: center;}
+
+.flight-head div{cursor:pointer}
+.arrow-up>div { width: 0px;  height: 0px;  border-left: 5px solid transparent; border-right: 5px solid transparent;  border-bottom: 5px solid #2f2f2f;  display: inline-block;  }
+.arrow-down>div {  width: 0px;  height: 0px; border-left: 5px solid transparent;border-right: 5px solid transparent; border-top: 5px solid #2f2f2f;display: inline-block;}
+.confirmation { display: flex; align-items: center; justify-content: space-between;}
+.buttons button { border: none;  background: #ff9d02; color: #fff; border-radius: 5px; width: auto; padding: 8px 16px; text-align: center;  cursor: pointer;}
+.conformModal .modal-header {    background: #e8f0fa;    padding: 7px 15px;    display: block;    text-align: center;    color: #ff9d02;}
+.conformModal .modal-header h4 {    font-size: 19px;}
+.flightsDuration {    display: flex;    align-items: center;    justify-content: space-between;    margin-bottom: 20px;}
+.flightFrom p strong, .flightTo p strong {    font-size: 20px;}
+.flightFrom p, .flightTo p {    margin-bottom: 0px;}
+.flightTo p {    text-align: right;}
+.tabs-left > .nav-tabs {  border-bottom: 0;}
+.tab-content > .tab-pane,.pill-content > .pill-pane {  display: none;}
+.tab-content > .active,.pill-content > .active {  display: block;}
+.tabs-left > .nav-tabs > li {  float: none;}
+.tabs-left > .nav-tabs > li > a {  /* min-width: 74px; */  margin-right: 0;  margin-bottom: 3px;}
+.tabs-left > .nav-tabs {  float: left;  margin-right: 19px;  border-right: 1px solid #ddd;}
+.tabs-left > .nav-tabs > li > a {  margin-right: -1px;  -webkit-border-radius: 4px 0 0 4px;     -moz-border-radius: 4px 0 0 4px;          border-radius: 4px 0 0 4px;}
+.tabs-left > .nav-tabs > li > a:hover,.tabs-left > .nav-tabs > li > a:focus {  /* border-color: #eeeeee #dddddd #eeeeee #eeeeee; */}
+.tabs-left > .nav-tabs .active > a,.tabs-left > .nav-tabs .active > a:hover,.tabs-left > .nav-tabs .active > a:focus {  border-color: #ddd transparent #ddd #ddd; border-right-color: #ffffff;}
+.tabbable.tabs-left {    display: flex;    margin-top: 15px;    align-items: flex-start;}
+.tabbable.tabs-left li {    display: block;    width: 150px;    height: auto;}
+.tabbable.tabs-left ul.nav.nav-tabs {    margin: 0px;    background: #fff;    padding: 0px;    width: 150px;}
+.tabbable.tabs-left li a {    padding: 10px 20px;    display: block;    border-bottom: 1px dotted #ccc;    margin: 0px;    width: 150px;}
+.tabbable.tabs-left li a.active {    position: relative;    color: #000;    width: 100%;}
+.tabbable.tabs-left li a.active:before { border-radius: 0px;  content: '';  width: 5px;  top: 0px;  position: absolute;  height: 100%; background: #ff9d02;    left: 0px;}
+.tabbable.tabs-left .tab-content {    background: #fff;    border: 0px;    border-radius: 0px;    min-height: 400px;    width: 100%;    padding: 40px;}
+.payWith {    font-size: 22px;    color: #555;    margin-bottom: 20px;}
+.balance {    font-size: 14px;    color: #555;    margin-bottom: 20px;}
+.amountPay {    font-size: 20px;    margin-bottom: 20px;}
+.amountPay button.payNow,.payNow {    display: inline-block;    background: #ff9d02;    color: #fff;    border-radius: 5px;    width: auto;    padding: 3px 16px;    text-align: center;    cursor: pointer;    margin-left: 20px;    border:none;}
+.payNow.disabled {    background: #ccc;}
+.byClick {    font-size: 13px;    color: #666;}
+.paymentDetails h5 {    font-size: 26px;    background-image: linear-gradient(to right, #845305,#ff9d02);    -webkit-background-clip: text;    background-clip: text;    -webkit-text-fill-color: transparent;    font-weight: 400;}
+.flightPrice {    background: #fff;    margin-top: 23px;    box-shadow: 0px 0px 3px #ddd;    padding: 10px;    margin-bottom: 30px;}
+.totalPrice {    display: flex;    justify-content: space-between;}
+.youPay {    display: flex;    justify-content: space-between;    margin: 10px 0px;    font-size: 19px;    border-top: 1px dotted #ccc;    padding-top: 10px;}
+.bookingSummary h5 { font-size: 26px; background-image: linear-gradient(to right, #845305,#ff9d02);    -webkit-background-clip: text;    background-clip: text;    -webkit-text-fill-color: transparent;  font-weight: 400;}
+.flightSummary {    background: #fff; margin-top: 23px;    box-shadow: 0px 0px 3px #ddd;    padding: 10px;    margin-bottom: 30px;}
+.flightName span {    font-size: 13px; color: #555;}
+.flighttoFrom {    display: flex;    justify-content: space-between;    align-items: center;}
+.flightstops {    text-align: center;}
+.flightdestiny {  text-align: right;}
+.flightLocation span, .flightdestiny span { font-size: 11px;}
+.flightstops span i { font-size: 12px;  color: #999;}
+.contactDetails h5 {    font-size: 26px;    background-image: linear-gradient(to right, #845305,#ff9d02);    -webkit-background-clip: text;    background-clip: text;    -webkit-text-fill-color: transparent;    font-weight: 400;}
+.cDetails {    background: #fff;    margin-top: 23px;    box-shadow: 0px 0px 3px #ddd;    padding: 10px;    margin-bottom: 30px;}
+.contactPerson {    font-size: 20px;    padding-bottom: 10px;}
+.cDetails p span {    width: 60px;    display: inline-block;    color: #666;}
+
+.airline-name{    white-space: nowrap;     width: 50px;     overflow: hidden;    text-overflow: ellipsis;}
+.mealSection {    display: flex;    margin-bottom: 10px;    align-items: center;}
+.mealSection label {    min-width: 100px;    text-align: right;    display: flex;    justify-content: flex-end;    padding-right: 6px;}
+.trip-title{    display: block;    padding: 3px 15px 6px;    min-width: 94px;    border-radius: 4px;    clear: both;    font-size: 14px;    text-align: center;    color: #666;   background-color: #fafafa;}
+.name.ng-binding.ng-scope {  font-size: 16px; line-height: 1.8;  padding: 0.5rem 2rem;}
+
+
+.passengerList {
+    background: #fff;
+    box-shadow: 0px 0px 1px #ddd;
+    border-radius: 5px;
+    display: block;
+}
+
+.passengerRow {
+    display: flex;
+}
+
+.passengerRow > div {
+    width: calc(100% / 6);
+    padding: 10px;
+    border: 1px solid #eee;
+}
+.menuIcon{ display:none;}
+
+@media (min-width:992px) and (max-width:1200px)
+{
+.search-filter {padding: 10px;}
+.left-div { min-width: auto;}
+.flight-title {  padding-left: 0px;  min-width: 16.6%;}
+.flight-depart, .flight-ariv, .flight-dur, .flight-price, .flight-btn { min-width: 16.6%;   text-align: center;}
+.flight-body { padding: 15px 5px;}
+.flight-Btitle { flex: 1; display: initial; min-width: 16.6%;}
+.flight-rest { display: flex; align-items: center; min-width: 83.4%;}
+.flight-rest > div { min-width: 20%; text-align: center;}
+.flight-Bbtn a{ padding: 4px; }
+.bg-grey {    background: #f8f8f6;}
+.airline-from .left-div p, .airline-to .left-div p {font-size: 12px;}
+.right-div a.next-date, .right-div a.previous-date, a#chooseDateBtn, a#chooseDateBtn1 {font-size: 12px;padding: 3px;}
+.right-div a.next-date i, .right-div a.previous-date i {padding: 0px;font-size: 11px;}
+a#chooseDateBtn i, a#chooseDateBtn1 i {font-size: 12px;padding: 0px;}
+.airline-listing .flight-head > div {font-size: 12px;}
+.airline-listing .flight-head {padding: 0px 10px;}
+.airline-listing .flight-rest > div {font-size: 13px;}
+}
+
+@media ( max-width: 991px)
+{
+.search-filter { top: 0px;width: 100%;    position: fixed;    height: 100%;    clear: both;    overflow: auto;    z-index: 999999;     left: -105%;
+-webkit-transition: left 0.5s;    transition: left 0.5s;}
+.flight-body{ padding: 10px 0px; }
+.left-div,.modify-search{ display: none; }
+.filter-btn{opacity: 1;background: #e4e4e4;border: 1px solid #bfbfbf;color: #666;padding: 10px;border-radius: 3px;display: inline-flex;margin-left: 8px;}
+.search-filter.filter-left {    left: 0px;    padding: 0px;}
+.time ul li {    display: inline-block;    width: 60px;}
+.stops ul li {    display: inline-block;    width: 80px;    text-align: center;}
+.stops ul {  column-count: auto;    text-align: -webkit-auto;}
+.time ul { column-count: auto;}
+.full-fiter { padding: 0px 30px;    background: #fff;}
+.full.filter-head{display: flex;font-size: 20px;color: #444;font-weight: 500;padding: 15px;justify-content: space-between;}
+.refine{ display: none }
+.center-div ul li:first-child {    padding-left: 0px;}
+.calender {  display: none;}
+.monthSlide { width: 100%;    max-width: 100%;}
+.flight-head {  padding: 10px;}
+.modify { font-size: 14px; text-transform: capitalize;}
+.booking-content { padding: 50px 15px 30px;}
+.total-time { text-align: left;}
+span.review-title { position: absolute; left: 17px;  transform: translate(0px); top: 5px;}
+.flight-from .left-div,.flight-to .left-div {display: block;}
+.airline-from .left-div p, .airline-to .left-div p {font-size: 12px;}
+.right-div a.next-date, .right-div a.previous-date, a#chooseDateBtn, a#chooseDateBtn1 {font-size: 12px;padding: 3px;}
+.right-div a.next-date i, .right-div a.previous-date i {padding: 0px;font-size: 11px;}
+a#chooseDateBtn i, a#chooseDateBtn1 i {font-size: 12px;padding: 0px;}
+.airline-listing > div {width: 49%;margin-right: 1%;}
+.airline-listing .flight-Bprice {display: block;}
+.airline-listing .flight-rest > div {width: 32%;}
+.airline-listing .flight-head > div {width: 25%;}
+.airline-listing .flight-Btitle {width: 25%;}
+.airline-listing .flight-rest {width: 75%;}
+.form-inner {  width: 60%; padding: 50px;}
+.panel-button{display: inline-block;background: none;border: none;}
+.mOverlay1 {  background: rgba(0,30,53,0.7);  position: fixed;  z-index: 998; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; transition: all 0.5s ease-in-out; opacity: 0; display: none;}
+.mOverlay1.active { display: block;  opacity: 1;}
+#sidebar-container{display: none;position: fixed;z-index: 999;top: 0;left: 0;height: 100%;background: #173253;width: 250px;}}
+#modelchooseDateBtn, #modelchooseDateBtn1 { background: #ddd;color: #777; display: flex; align-items: center; justify-content: center; font-size: 14px; width: 15%; height: 100%;}
+#date_up, #date_down {  height: 38px;}
+}
+
+
+@media (max-width:767px){
+   .header-menu{position: relative;padding: 8px 4%;}
+.main-menu-bar {display: block;position: absolute;top: 50%;right: 4%;transform: translate(0,-50%);background: #173253;color: #ffffff;border-radius: 2px;padding: 6px 10px;border: none;}
+.main-menu,#sidebar-container{display: none;position: fixed;z-index: 999;top: 0;left: 0;height: 100%;background: #173253;width: 250px;}
+.mOverlay,.mOverlay1 {  background: rgba(0,30,53,0.7);  position: fixed;  z-index: 998; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; transition: all 0.5s ease-in-out; opacity: 0; display: none;}
+.mOverlay.active,.mOverlay1.active { display: block;  opacity: 1;}
+.main-menu li{ display: block; width: 100%; }
+.main-menu ul li a{width: 100%;display: block;padding: 15px;color: #fff;font-weight: 400;font-size: 15px;}
+#home-slider{ height:100%;}
+#home-slider .carousel-control-prev, .carousel-control-next{ top:40%}
+.view-left{ text-align:center;}
+.view-right{ text-align:center; margin-top:20px;}
+.bottom-footer p,.bottom-footer ul{ text-align:center;}
+.bottom-footer ul{ padding-top:10px;}
+.slider-tabs{ position:static;}
+.main-menu ul li.search,.main-menu ul li.cart{ display:none}
+.welcome-img span:before { width: 120px; height: 1px; }
+.welcome-img span:after {  width: 120px; height: 1px; }
+.testimonial-section .offset-3{ margin:0px}
+#quote-carousel .carousel-control.left {left: 80%;transform: translate(-50%);}
+#quote-carousel .carousel-control.right {right: 0px !important;}
+#quote-carousel .carousel-control { top: 88%;}
+.activity{ margin-bottom:20px;}
+ul.nav.nav-tabs{ padding-left:0px}
+.search-title h2{ font-size:32px; padding-top:30px}
+.main-menu li.current a { background: #ff9d02;}
+.search-filter { top: 0px; width: 100%; position: fixed; height: 100%; clear: both; overflow: auto; z-index: 999999;  left: -105%;   -webkit-transition: left 0.5s; transition: left 0.5s;}
+.flight-body{ padding: 10px 0px; }
+.left-div,.modify-search{ display: none; }
+.filter-btn{opacity: 1;background: #e4e4e4;border: 1px solid #bfbfbf;color: #666;padding: 10px;border-radius: 3px;display: inline-flex;margin-left: 8px;}
+.search-filter.filter-left { left: 0px; padding: 0px;}
+.time ul li {  display: inline-block; width: 60px;}
+.stops ul li {  display: inline-block; width: 80px;  text-align: center;}
+.stops ul {  display:flex; text-align: -webkit-auto;}
+.time ul {  column-count: auto;}
+.full-fiter {padding: 0px 30px; background: #fff;}
+.full.filter-head{display: flex;font-size: 20px;color: #444;font-weight: 500;padding: 15px;justify-content: space-between;}
+.refine{ display: none }
+.center-div ul li:first-child {padding-left: 0px;}
+.calender { display: none;}
+.monthSlide {  width: 100%; max-width: 100%;}
+.flight-head { padding: 10px;}
+.flight-title {padding-left: 0px;min-width: 25%;flex: 0;width: 25%;text-align: center;}
+.flight-Btitle {  display: initial;  min-width: 25%;}
+.flight-logo { margin-right: 0px; margin-bottom: 10px;}
+.flight-rest > div { width: auto;   font-size: 16px; text-align: center; min-width: 33.3%;}
+.flight-Bdur {  display: none;}
+.flight-depart, .flight-ariv, .flight-dur, .flight-price, .flight-btn {  min-width: 25%; font-size: 13px; text-align: center;}
+.flight-dur,.flight-btn,.flight-Bprice { display: none;}
+.flight-Bbtn a { width: auto; padding: 4px; display: inline-flex; font-size: 14px; text-align: center; align-items: center;  justify-content: center;}
+.labl{ text-align:left }
+.traveller-details .offset-3{ margin: 0px }
+.right-div a.next-date, .right-div a.previous-date{ display: none; }
+.airline-listing .airline-from .flight-ariv, .airline-listing .airline-to .flight-ariv,.airline-listing .airline-from .flight-Bariv,.airline-listing .airline-to .flight-Bariv {display: none;}
+.airline-listing .flight-head > div {width: 33.3%;min-width: 33.3%;}
+.airline-listing .flight-Btitle {width: 33.3%;min-width: 33.3%;}
+.airline-from .flight-inner > div,.airline-to .flight-inner > div {width: 33.3%;min-width: 33.3%;}
+.flight-body-main .custom-control-label::before, .flight-body-main .custom-control-label::after {left: auto;right: 10px;top: 30px;width: 1.3rem;height: 1.3rem;}
+.airline-section {display: block;padding: 0px 10px;}
+.flight-per-adult {width: 100%;max-width: 100%;}
+.airline-slider {display: block;width: 100%;max-width: 100%;padding-top: 10px;padding-bottom: 10px;}
+.round-rest .round-dur {display: none;}
+.roundbook-fixed .roundbook-innerm {width: 50%;display: block;}
+.roundbook-fixed .roundbook-innerm > div { width:100%; }
+.round-rest > div {margin: 0px 3px;}
+.round-logo img {max-width: 20px;}
+.right-div a ,.filter-btn{padding: 0px;display: inline-flex;width: 30px;height: 30px;text-align: center;justify-content: center;line-height: 30px;}
+.filter-btn i{ padding: 0px }
+.seatside-panel{ width: 420px; }
+.seat-layout-left {  width: 100%;}
+.seat-layout-inner {  display: block;}
+.seat-layout-right { margin-top: 20px;width: 100%;}
+.mar-bottom{ margin-bottom: 30px; }
+.form-inner { width:100%; padding: 10px }
+.logo {    order: 2;}
+.main-menu1 { order: 1; margin-left: 0px; margin-right: 0px;}
+.main-menu2 {  order: 3;}
+.dropdown-menu li.dropdown-item ul.dropdown-menu { position: static;}
+/*.main-menu1 li.dropdown a.dropdown-toggle { font-size: 0px;}*/
+.main-menu1 li.dropdown a.dropdown-toggle i {  font-size: 16px;}
+.main-menu1 li.dropdown  li.dropdown-item.dropdown a { font-size: 14px;}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item a:after { transform: none;}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item ul.dropdown-menu{ position: static; }
+.recent-booking ul.nav.nav-tabs { flex-wrap: wrap; flex-direction: column;}
+.recent-booking ul.nav.nav-tabs li { display: block; width: 100%; border-bottom: 1px solid #ddd;}
+.recent-booking .tab-content table tr td {  white-space: nowrap;}
+.notify-title {    margin-top: 30px;}
+.notification { display: block;}
+.notification ul.nav.nav-tabs li { margin-bottom: 2px; text-align: center;}
+.notification ul.nav.nav-tabs li a { text-align: center;}
+.menuIcon { display: block; color: #000; font-size: 20px;}
+.main-menu1 ul.navbar-nav { display: none; position: absolute; left: 0px; top: 68px; width: 100%; background: #ff9d02; border-top: 3px solid #016dff;}
+.main-menu1 ul.navbar-nav li.nav-item.dropdown a,.main-menu1 ul.navbar-nav li a { text-align: left;  display: flex; font-size: 14px; padding: 15px; color: #fff; flex-direction: row;  border-bottom: 1px dotted #a26e1c;}
+.main-menu1 ul.navbar-nav li.nav-item.dropdown a span, .main-menu1 ul.navbar-nav li a span { color: #fff;  font-size: 24px; display: inline-flex; margin-right: 10px;}
+.main-menu1 li a.dropdown-toggle:after {  top: 50%;}
+.main-menu1 ul.dropdown-menu li ul.dropdown-menu { position: static !important; width: 100%;}
+.main-menu1 ul.dropdown-menu { position: static; width: 100%; background: #b17310;}
+.tabbable.tabs-left .tab-content {    padding: 10px;    min-height: auto;}
+.tabbable.tabs-left li, .tabbable.tabs-left ul.nav.nav-tabs {    width: 100px;}
+.tabbable.tabs-left li a {    padding: 10px;}
+ 
+.printBill {
+    display: block;
+    text-align: left;
+}
+
+.printBill .billBtn {
+    display: block;
+    width: max-content;
+    margin-top: 20px;
+}
+
+.detailPhone {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detainInner {
+    display: block;
+    padding: 10px;
+}
+
+.fbookDetails {
+    display: block;
+}
+
+.phoneIcon i {
+    margin-right: 5px;
+}
+
+.detailPhone .input-group-prepend .input-group-text select {
+    max-width: 70px;
+}
+
+.detailPhone input, .formField input {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+}
+
+.fbookDetails > div {
+    border: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.fbookDetails {
+    padding: 10px;
+}
+
+.flightType span {
+    font-size: 12px;
+    padding: 0px 3px;
+}
+
+.flightType {
+    text-align: left;
+}
+
+.flightTakeof p {
+    font-size: 12px;
+}
+
+.flighttoFrom {
+    align-items: baseline;
+}
+}
+
+@media (max-width:767px){
+   .header-menu{position: relative;padding: 8px 4%;}
+.main-menu-bar {display: block;position: absolute;top: 50%;right: 4%;transform: translate(0,-50%);background: #173253;color: #ffffff;border-radius: 2px;padding: 6px 10px;border: none;}
+.main-menu,#sidebar-container{display: none;position: fixed;z-index: 999;top: 0;left: 0;height: 100%;background: #173253;width: 250px;}
+.mOverlay,.mOverlay1 {  background: rgba(0,30,53,0.7);  position: fixed;  z-index: 998; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; transition: all 0.5s ease-in-out; opacity: 0; display: none;}
+.mOverlay.active,.mOverlay1.active { display: block;  opacity: 1;}
+.main-menu li{ display: block; width: 100%; }
+.main-menu ul li a{width: 100%;display: block;padding: 15px;color: #fff;font-weight: 400;font-size: 15px;}
+#home-slider{ height:100%;}
+#home-slider .carousel-control-prev, .carousel-control-next{ top:40%}
+.view-left{ text-align:center;}
+.view-right{ text-align:center; margin-top:20px;}
+.bottom-footer p,.bottom-footer ul{ text-align:center;}
+.bottom-footer ul{ padding-top:10px;}
+.slider-tabs{ position:static;}
+.main-menu ul li.search,.main-menu ul li.cart{ display:none}
+.welcome-img span:before { width: 120px; height: 1px; }
+.welcome-img span:after {  width: 120px; height: 1px; }
+.testimonial-section .offset-3{ margin:0px}
+#quote-carousel .carousel-control.left {left: 80%;transform: translate(-50%);}
+#quote-carousel .carousel-control.right {right: 0px !important;}
+#quote-carousel .carousel-control { top: 88%;}
+.activity{ margin-bottom:20px;}
+ul.nav.nav-tabs{ padding-left:0px}
+.search-title h2{ font-size:32px; padding-top:30px}
+.main-menu li.current a { background: #ff9d02;}
+.search-filter { top: 0px; width: 100%; position: fixed; height: 100%; clear: both; overflow: auto; z-index: 999999;  left: -105%;   -webkit-transition: left 0.5s; transition: left 0.5s;}
+.flight-body{ padding: 10px 0px; }
+.left-div,.modify-search{ display: none; }
+.right-div i {padding-right: 0;}
+
+.filter-btn{opacity: 1;background: #e4e4e4;border: 1px solid #bfbfbf;color: #666;padding: 10px;border-radius: 3px;display: inline-flex;margin-left: 8px;}
+.search-filter.filter-left { left: 0px; padding: 0px;}
+.time ul li {  display: inline-block; width: 60px;}
+.stops ul li {  display: inline-block; width: 80px;  text-align: center;}
+.stops ul {  display:flex; text-align: -webkit-auto;}
+.time ul {  column-count: auto;}
+.full-fiter {padding: 0px 30px; background: #fff;}
+.full.filter-head{display: flex;font-size: 20px;color: #444;font-weight: 500;padding: 15px;justify-content: space-between;}
+.refine{ display: none }
+.center-div ul li:first-child {padding-left: 0px;}
+.calender { display: none;}
+.monthSlide {  width: 100%; max-width: 100%;}
+.flight-head { padding: 10px;}
+.flight-title {padding-left: 0px;min-width: 25%;flex: 0;width: 25%;text-align: center;}
+.flight-Btitle {  display: initial;  min-width: 25%;}
+.flight-logo { margin-right: 0px; margin-bottom: 10px;}
+.flight-rest > div { width: auto;   font-size: 16px; text-align: center; min-width: 33.3%;}
+.flight-Bdur {  display: none;}
+.flight-depart, .flight-ariv, .flight-dur, .flight-price, .flight-btn {  min-width: 25%; font-size: 13px; text-align: center;}
+.flight-dur,.flight-btn,.flight-Bprice { display: none;}
+.flight-Bbtn a { width: auto; padding: 4px; display: inline-flex; font-size: 14px; text-align: center; align-items: center;  justify-content: center;}
+.labl{ text-align:left }
+.traveller-details .offset-3{ margin: 0px }
+.right-div a.next-date, .right-div a.previous-date{ display: none; }
+.airline-listing .airline-from .flight-ariv, .airline-listing .airline-to .flight-ariv,.airline-listing .airline-from .flight-Bariv,.airline-listing .airline-to .flight-Bariv {display: none;}
+.airline-listing .flight-head > div {width: 33.3%;min-width: 33.3%;}
+.airline-listing .flight-Btitle {width: 33.3%;min-width: 33.3%;}
+.airline-from .flight-inner > div,.airline-to .flight-inner > div {width: 33.3%;min-width: 33.3%;}
+.flight-body-main .custom-control-label::before, .flight-body-main .custom-control-label::after {left: auto;right: 8px;top: 8px;width: 0.7rem;height: 0.7rem;}
+.airline-section {display: block;padding: 0px 10px;}
+.flight-per-adult {width: 100%;max-width: 100%;}
+.airline-slider {display: block;width: 100%;max-width: 100%;padding-top: 10px;padding-bottom: 10px;}
+.round-rest .round-dur {display: none;}
+.roundbook-fixed .roundbook-innerm {width: 50%;display: block;}
+.roundbook-fixed .roundbook-innerm > div { width:100%; }
+.round-rest > div {margin: 0px 3px;}
+.round-logo img {max-width: 20px;}
+.right-div a ,.filter-btn{padding: 0px;display: inline-flex;width: 30px;height: 30px;text-align: center;justify-content: center;line-height: 30px;}
+.filter-btn i{ padding: 0px }
+.seatside-panel{ width: 420px; }
+.seat-layout-left {  width: 100%;}
+.seat-layout-inner {  display: block;}
+.seat-layout-right { margin-top: 20px;width: 100%;}
+.mar-bottom{ margin-bottom: 30px; }
+.form-inner { width:100%; padding: 10px }
+.logo {    order: 2;}
+.main-menu1 { order: 1; margin-left: 0px; margin-right: 0px;}
+.main-menu2 {  order: 3;}
+.dropdown-menu li.dropdown-item ul.dropdown-menu { position: static;}
+/*.main-menu1 li.dropdown a.dropdown-toggle { font-size: 0px;}*/
+.main-menu1 li.dropdown a.dropdown-toggle i {  font-size: 16px;}
+.main-menu1 li.dropdown  li.dropdown-item.dropdown a { font-size: 14px;}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item a:after { transform: none;}
+.navbar-expand-md .main-menu2 .navbar-nav .dropdown-menu li.dropdown-item ul.dropdown-menu{ position: static; }
+.recent-booking ul.nav.nav-tabs { flex-wrap: wrap; flex-direction: column;}
+.recent-booking ul.nav.nav-tabs li { display: block; width: 100%; border-bottom: 1px solid #ddd;}
+.recent-booking .tab-content table tr td {  white-space: nowrap;}
+.notify-title {    margin-top: 30px;}
+.notification { display: block;}
+.notification ul.nav.nav-tabs li { margin-bottom: 2px; text-align: center;}
+.notification ul.nav.nav-tabs li a { text-align: center;}
+.menuIcon { display: block; color: #000; font-size: 20px;}
+.main-menu1 ul.navbar-nav {display: none;position: absolute;left: 0px;top: 79px;width: 100%;background: #ff9d02;border-top: 3px solid #016dff;z-index: 99999999;}
+.main-menu1 ul.navbar-nav li.nav-item.dropdown a,.main-menu1 ul.navbar-nav li a { text-align: left;  display: flex; font-size: 14px; padding: 15px; color: #fff; flex-direction: row;  border-bottom: 1px dotted #a26e1c;}
+.main-menu1 ul.navbar-nav li.nav-item.dropdown a span, .main-menu1 ul.navbar-nav li a span { color: #fff;  font-size: 24px; display: inline-flex; margin-right: 10px;}
+.main-menu1 li a.dropdown-toggle:after {  top: 50%;}
+.main-menu1 ul.dropdown-menu li ul.dropdown-menu { position: static !important; width: 100%;}
+.main-menu1 ul.dropdown-menu { position: static; width: 100%; background: #b17310;}
+.tabbable.tabs-left .tab-content {    padding: 10px;    min-height: auto;}
+.tabbable.tabs-left li, .tabbable.tabs-left ul.nav.nav-tabs {    width: 100px;}
+.tabbable.tabs-left li a {    padding: 10px;}
+ 
+.printBill {
+    display: block;
+    text-align: left;
+}
+
+.printBill .billBtn {
+    display: block;
+    width: max-content;
+    margin-top: 20px;
+}
+
+.detailPhone {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detainInner {
+    display: block;
+    padding: 10px;
+}
+
+.fbookDetails {
+    display: block;
+}
+
+.phoneIcon i {
+    margin-right: 5px;
+}
+
+.detailPhone .input-group-prepend .input-group-text select {
+    max-width: 70px;
+}
+
+.detailPhone input, .formField input {
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+}
+
+.fbookDetails > div {
+    border: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.fbookDetails {
+    padding: 10px;
+}
+
+.flightType span {
+    font-size: 12px;
+    padding: 0px 3px;
+}
+
+.flightType {
+    text-align: left;
+}
+
+.flightTakeof p {
+    font-size: 12px;
+}
+
+.flighttoFrom {
+    align-items: baseline;
+}
+.passengerList thead {
+    display: none;
+}
+
+.passengerList tbody tr td {
+    display: block;
+    text-align: right;
+}
+
+.passengerList tbody tr td:before {
+    content: attr(data-title) ": ";
+    font-weight: 700;
+    text-align: left;
+    float: left;
+}
+}
+
+@media (max-width:540px){
+.topmenu,.topmenu div{ display:block; text-align:center;}
+ul.topright{ justify-content:center; padding-top:15px;}
+.nav-tabs .nav-item{max-width: 120px;border-radius:3px;margin-bottom: 5px;display: block;border: 1px solid #00204c;width: 100%;}
+.nav-tabs .nav-item .nav-link,.nav-tabs .nav-item .nav-link.active{border-radius:3px;/* margin-bottom:10px; */font-size: 12px;width: auto;display: block;padding: 8px;min-width: auto;}
+ul.nav.nav-tabs{ padding-left:0px}
+.airline-listing .flight-head > div,.airline-from .flight-inner > div, .airline-to .flight-inner > div{ min-width:50%; text-align: left; width: 50%; }
+.flight-from,.flight-to,.airline-from .flight-inner > div.flight-Bdepart,.airline-listing .flight-head > div.flight-depart,.airline-listing .flight-head > div.flight-depart, .airline-to .flight-inner > div.flight-Bdepart{ display: none; }
+.round-rest .round-dur {display: none;}
+.roundbook-fixed .roundbook-innerm {display: none;}
+.roundbook-fixed > div {width: 100%;}
+.seatside-panel{ width: 320px; }
+.dismiss-menu { width: 20px; height: 20px; line-height: 20px; right: 0px; z-index: 999; left: auto; font-size: 14px;}
+.hotel-inner { flex-direction: column; justify-content: left;}
+.hotel-price { text-align: left;}
+.hotel-body-main { flex-direction: column;}
+.hotel-desc { padding-top: 10px;}
+.all-deatls { width: 100%; flex: 1;}
+.inout-details {display: block;}
+.all-deatls { padding-top: 10px;}
+.bus-heading .operator-name { display: none;}
+.rest-details { max-width: 100%;}
+.bus-inner { flex-direction: column-reverse; padding: 0px;}
+.bus-inner .rest-details { width: 100%; max-width: 100%;}
+.bus-inner .operator-name { max-width: 100%; text-align: center; padding: 5px 0px; border-top: 1px solid #eee; margin-top: 10px; color: #000; background: #eee;}
+.bus-heading .rest-details > div.bus-duration {  display: none;}
+.bus-inner .rest-details > div.bus-duration { display: none;}
+.bus-inner .rest-details > div { min-width: 33.3%;}
+.bus-heading .rest-details > div { min-width: 33.3%;}
+.bus-inner .bus-seats { font-size: 12px; padding: 6px; margin-bottom: 4px;}
+.bus-inner .operator-name p { color: #000;}
+#select-seat .seat-layout-left { width: 100%;}
+#select-seat .city-code-holder { padding: 0px 5px;}
+#select-seat .departure-info { flex-direction: column;}
+#select-seat .seat-type ul li { width: 46%;}
+#select-seat .seat-layout-right { width: 100%; border-left: 0px; border-top: 1px solid #ccc; margin-left: 0px;padding-top: 3%;}
+}
+
+/*
+.form-group.has-error label{
+    color:#dc3545;
+}
+.form-group.has-error input:not(submit){
+    border : 1px solid #dc3545;
+}
+.form-group.has-error textarea{
+    border : 1px solid #dc3545;
+}
+*/
+
+.flight-head div{cursor:pointer}
+
+.arrow-up>div {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #2f2f2f;
+    display: inline-block;
+  }
+  
+  .arrow-down>div {
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #2f2f2f;
+    display: inline-block;
+  }
+
+
+
+
+.confirmation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons button {
+    border: none;
+    background: #ff9d02;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;
+    padding: 8px 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.conformModal .modal-header {
+    background: #e8f0fa;
+    padding: 7px 15px;
+    display: block;
+    text-align: center;
+    color: #ff9d02;
+}
+
+.conformModal .modal-header h4 {
+    font-size: 19px;
+}
+.flightsDuration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.flightFrom p strong, .flightTo p strong {
+    font-size: 20px;
+}
+
+.flightFrom p, .flightTo p {
+    margin-bottom: 0px;
+}
+
+.flightTo p {
+    text-align: right;
+}
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+.tabs-left > .nav-tabs > li {
+  float: none;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  /* min-width: 74px; */
+  margin-right: 0;
+  margin-bottom: 3px;
+}
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: 1px solid #ddd;
+}
+
+.tabs-left > .nav-tabs > li > a {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+
+.tabbable.tabs-left {
+    display: flex;
+    margin-top: 15px;
+    align-items: flex-start;
+}
+
+.tabbable.tabs-left li {
+    display: block;
+    width: 150px;
+    height: auto;
+}
+
+.tabbable.tabs-left ul.nav.nav-tabs {
+    margin: 0px;
+    background: #fff;
+    padding: 0px;
+    width: 150px;
+}
+
+.tabbable.tabs-left li a {
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px dotted #ccc;
+    margin: 0px;
+    width: 150px;
+}
+
+.tabbable.tabs-left li a.active {
+    position: relative;
+    color: #000;
+    width: 100%;
+}
+
+.tabbable.tabs-left li a.active:before {
+    border-radius: 0px;
+    content: '';
+    width: 5px;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    background: #ff9d02;
+    left: 0px;
+}
+
+.tabbable.tabs-left .tab-content {
+    background: #fff;
+    border: 0px;
+    border-radius: 0px;
+    min-height: 400px;
+    width: 100%;
+    padding: 40px;
+}
+
+.payWith {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.amountPay {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.amountPay button.payNow,a.payNow {
+    display: inline-block;
+    background: #ff9d02;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;
+    padding: 3px 16px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    border:none;
+}
+
+a.payNow.disabled {
+    background: #ccc;
+}
+
+.byClick {
+    font-size: 13px;
+    color: #666;
+}
+
+.paymentDetails h5 {
+    font-size: 26px;
+    background-image: linear-gradient(to right, #845305,#ff9d02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.flightPrice {
+    background: #fff;
+    margin-top: 23px;
+    box-shadow: 0px 0px 3px #ddd;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.youPay {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    font-size: 19px;
+    border-top: 1px dotted #ccc;
+    padding-top: 10px;
+}
+.bookingSummary h5 {
+    font-size: 26px;
+    background-image: linear-gradient(to right, #845305,#ff9d02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.flightSummary {
+    background: #fff;
+    margin-top: 23px;
+    box-shadow: 0px 0px 3px #ddd;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.flightName span {
+    font-size: 13px;
+    color: #555;
+}
+
+.flighttoFrom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flightstops {
+    text-align: center;
+}
+
+.flightdestiny {
+    text-align: right;
+}
+
+.flightLocation span, .flightdestiny span {
+    font-size: 11px;
+}
+
+.flightstops span i {
+    font-size: 12px;
+    color: #999;
+}
+.contactDetails h5 {
+    font-size: 26px;
+    background-image: linear-gradient(to right, #845305,#ff9d02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+}
+
+.cDetails {
+    background: #fff;
+    margin-top: 23px;
+    box-shadow: 0px 0px 3px #ddd;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.contactPerson {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.cDetails p span {
+    width: 60px;
+    display: inline-block;
+    color: #666;
+}
+
+
+
+@media (max-width: 767px){
+    .tabbable.tabs-left .tab-content {
+    padding: 10px;
+    min-height: auto;
+}
+
+.tabbable.tabs-left li, .tabbable.tabs-left ul.nav.nav-tabs {
+    width: 100px;
+}
+
+.tabbable.tabs-left li a {
+    padding: 10px;
+}
+}
+
+.airline-name{
+    white-space: nowrap; 
+    width: 50px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mealSection {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+
+
+.mealSection label {
+    min-width: 100px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6px;
+}
+
+.trip-title{
+    display: block;
+    padding: 3px 15px 6px;
+    min-width: 94px;
+    border-radius: 4px;
+    clear: both;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    background-color: #fafafa;
+}
+
+.name.ng-binding.ng-scope {
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 0.5rem 2rem;
+}
+
+.confirmation .message{
+    padding: 2rem 2rem;
+}
+
+.paymentSuccess {
+    background: #fff;
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px #ccc;
+    text-align: center;
+}
+
+.paymentSuccess i {
+    font-size: 32px;
+    color: #00803a;
+}
+
+.paymentSuccess h4 {
+    color: #00803a;
+    margin: 10px 0px;
+}
+
+.paymentSuccess p {
+    padding: 10px;
+    font-size: 16px;
+}
+.paymentSuccess p i {
+    font-size: 14px;
+    color: #333;
+    padding-left: 5px;
+}
+.paymentSuccess .flight-Bbtn a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.paymentSuccess .flight-Bbtn a i {
+    font-size: 14px;
+    color: #fff;
+}
+
+.flight-Bprice {
+    justify-content: center;
+    position: relative;
+    font-size: 18px;
+    flex-wrap: wrap;
+}
+.flight-Bprice .internationprice {
+    white-space: nowrap;
+}
+.flight-Bprice .commission-area.ng-scope {
+    font-size: 80%;
+    white-space: nowrap;
+}
+.tooltip-content {
+    position: ABSOLUTE;
+    top: calc(100% + 10px);
+    width: 100%;
+    background: #fff;
+    min-width: 280px;
+    max-width: 300px;
+    z-index: 999;
+    text-align: left;
+    padding: 10px;
+    display: none;
+    font-size: 13px;
+    box-shadow: 0px 0px 20px #e5e5e5;
+    cursor: pointer;
+    right: 0px;
+}
+
+.flight-Bprice:hover .tooltip-content {
+    display: block;
+}
+
+.tooltip-content:before {border-left: 9px solid transparent;border-right: 9px solid transparent;border-bottom: 9px solid #fff;content:'';position: absolute;top: -9px;right: 40px;transform: translate(-50%);}
+
+.tooltip-content table {
+    width: 100%;
+}
+
+.preloader {padding-top: 60px; padding-bottom: 60px; position: absolute; background: #fff; z-index: 9999;
+    top: 0px;text-align: center; overflow: hidden; left:0px; right: 0; bottom: 0;}
+
+.preloader img.absolute-image {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.commission-tooltip {
+    font-size:11px;
+    font-weight:bolder;
+}
+.tooltip-content th,.tooltip-content td {
+    padding: 5px 2px;
+    width: 100%;
+    min-width: 55px !important;
+    font-size: 12px;
+}
+.airline-listing .flight-inner > div.flight-Bprice {
+    min-width: 110px;
+}
+
+.internalRest {
+    width: 100%;
+    display: block;
+}
+
+.internalRestinner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.internalRestinner:before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    position: absolute;
+    height: 1px;
+    background-color: #ddd;
+    top: 100%;
+    left: -100px;
+}
+
+.internalRestinner > div {
+    flex: 1 1 auto;
+    line-height: initial;
+}
+.internalRestinner > div > div.ng-scope {display: flex;}
+.internalRestinner > div > div.ng-scope:nth-child(2) {
+    margin-top: 10px;
+}
+.internalRestinner:last-child {
+    border: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.internalRestinner:last-child:before {display: none;}
+.right-div.internationalModal {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.right-div.internationalModal .flight-Bbtn a {
+    font-size: 14px;
+    padding: 4px 20px;
+}
+.ui-widget.ui-widget-content {
+    max-height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    z-index: 99999;
+}
+
+label.timeSlot.current:before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff9d02;
+    top: 0px;
+    position: absolute;
+    left: 0px;
+}
+
+.loader-sm img{
+    max-width: 100px;
+    height: auto;
+}
+.loader-sm{text-align: center}
+
+
+
+.backto {
+    font-size: 13px;
+    color: #016dff;
+}
+
+.backto i {
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.searchModify {
+    text-align: right;
+}
+
+.searchModify a {
+    background: #ddd;
+    border: 1px solid #ccc;
+    color: #666;
+    padding: 6px 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+    margin-left: auto;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.searchModify a i {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.backtoHotels {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.hotelnRate {
+    display: flex;
+    align-items: center;
+}
+
+.namehotel {
+    font-size: 22px;
+    padding-right: 10px;
+    color: #222;
+}
+.hotelAddress p {
+    color: #555;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.star-rating {overflow: hidden;position: relative;height: 1em;line-height: 1;font-size: 1em;width: 5.4em;font-family: star;right: 0px;margin-left: auto;}
+.star-rating{ margin-left: auto; }
+.star-rating::before {content: '\73\73\73\73\73';float: right;top: 0;right: 0;position: absolute;color:#ffb300;}
+.star-rating span{overflow: hidden;float: left;top: 0;position: absolute;padding-top: 1.5em;left: 0px;}
+.star-rating span::before{content: '\53\53\53\53\53';top: 0;position: absolute;left: 2px;color:#ffb300;}
+.hotelPrice {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.hotelNames {
+    padding: 10px 0px;
+}
+
+.roomRate {
+    font-size: 24px;
+    text-align: right;
+    padding-right: 10px;
+    font-weight: 800;
+}
+
+.priceFor {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.roomRate i {
+    font-size: 18px;
+}
+
+
+
+.hotelMenu {
+    background: #fff;
+    padding: 0px 10px;
+    box-shadow: 0px 0px 1px #ccc;
+}
+
+.hotelMenu ul {
+    display: flex;
+}
+
+.hotelMenu ul li a {
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+    border-right: 1px solid #ddd;
+    color: #333;
+}
+
+.hotel-img img {
+    width: 100%;
+}
+
+.photos {
+    padding: 10px;
+    margin:  10px 0px;
+    background: #fff;
+}
+.hotel-slide .owl-nav button {  position: absolute; top: 50%; transform:translate(0px, -50%)}
+.hotel-slide .owl-nav button.owl-prev span, .hotel-slide .owl-nav button.owl-next span{font-size: 51px;background: rgba(0,0,0,0.4);width: 50px;height: 50px;line-height: 36px;box-shadow: 0px 0px 10px #fff;border-radius: 100%;color: #fff;transition: all ease 0.2s;display: block;}
+.hotel-slide .owl-nav button.owl-prev{ left: 50px;}
+.hotel-slide .owl-nav button.owl-next{ right: 50px;}
+.hotel-slide .owl-nav button.owl-prev:hover,.hotel-slide .owl-nav button.owl-next:hover{ background:rgba(0,0,0,1)}
+
+.hotel-slide .owl-dots {position: absolute; bottom: 7px; z-index: 999; text-align: center; width: 100%;}
+.hotel-slide .owl-dots button.owl-dot { background: rgba(255,255,255,0.3); width: 10px; height: 10px; margin-right: 7px; border-radius: 100%;}
+.hotel-slide .owl-dots button.owl-dot.active { background: #fff;}
+.hotelRating p {
+    color: #049a41;
+    font-size: 30px;
+}
+
+.overAll {
+}
+
+.overAll .star-rating {
+    display: inline-flex;
+    margin-left: 0px;
+}
+
+.overallReview {
+    display: block;
+    color: #ff9d02;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.basedOn {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #999;
+}
+.hotelRating .basedOn p {
+    font-size: 13px;
+    color: #000;
+}
+.aboutHotel li i {
+    font-size: 12px;
+}
+
+.aboutHotel li span.green {
+    color: #049a41;
+}
+.advantages h3 {
+    background: #ffb300;
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+}
+
+.advantages ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px 7px;
+    height: 100%;
+    flex-wrap: wrap;
+
+}
+
+.advantages {
+    border: 1px solid #ffb300;
+    margin-top: 20px;
+}
+
+.advantages ul li,.advantages ul li span {
+    text-align: center;
+}
+
+.advantages ul li span {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+
+.advantages ul li i {
+    width: 40px;
+    height: 40px;
+    background: #ffb300;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    font-size: 20px;
+    margin: 0px auto;
+}
+
+.advantages ul li {
+    padding: 6px;
+    width: calc(100% / 11);
+    background: #f1f1f1;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px #bbb;
+}
+.roomContent {
+    padding: 20px 0px;
+    line-height: 30px;
+}
+.faq {
+    padding: 20px 0px;
+}
+
+.faq h3 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.faqQa {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.faqQa h4 {
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.faqQa:last-child {
+    border-bottom: 0px;
+}
+
+.hotelPolicies {
+    padding: 10px 0px;
+}
+
+.titlesHotel h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.policiesMain {
+    padding: 10px;
+    margin: 10px 0px;
+    background: #fff;
+}
+
+.policiesInner {
+    display: flex;
+    padding: 10px;
+}
+
+.policiesIn1 {
+    display: flex;
+    align-items: center;
+}
+
+.policiesInner > div.policiesIn1 {
+    width: calc(100% / 5);
+}
+
+.polcyicon {
+    background: #eee;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.policyList {
+    padding: 10px;
+}
+
+.policyList ul {
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.policyList ul li {
+    position: relative;
+}
+
+.policyList ul li i {
+    position: absolute;
+    left: -17px;
+    top: 10px;
+    font-size: 9px;
+}
+
+.amnitiesInner {
+    padding: 15px 10px;
+    margin: 10px 0px;
+    background: #fff;
+}
+
+.aminitieList h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+}
+
+.aminitieList h4 i {
+    font-size: 14px;
+}
+.aminitieList {
+    margin-bottom: 15px;
+}
+.aminitieList ul {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.aminitieList ul li {
+    position: relative;
+    font-size: 13px;
+    padding-bottom: 4px;
+    color: #000000;
+}
+.aminitieList ul li i {
+    font-size: 10px;
+    position: absolute;
+    top: 4px;
+    left: -15px;
+}
+.important h3 {
+    background: #ffb300;
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+}
+
+.important {
+    background: #fff;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.landmarkList {
+    display: flex;
+    padding: 4px 10px;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.landmarkPlace {
+    max-width: 90%;
+}
+.rightBr {
+    border-right: 1px solid #ccc;
+    margin: 10px 0px;
+}
+
+.rightBr:last-child {
+    border: 0px;
+}
+.map {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0px 20px;
+    position: relative;
+}
+.roomOption {
+    padding: 10px;
+    margin: 10px 0px;
+    background: #fff;
+}
+
+.roomOption .flight-Bbtn .hotelCheck {
+    display: block;
+    font-size: 15px;
+    padding: 7px 15px;
+    background: #ff9d02;
+    color: #fff;
+    border-radius: 3px;
+    border: 0px;
+}
+.roomType {
+    box-shadow: 0px 0px 3px #ccc;
+    padding: 10px;
+}
+
+.roomType h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.aboutRoom {
+    display: flex;
+    height: 100%;
+}
+
+.roomLeft {
+    padding: 10px;
+    background: #eee;
+    max-width: 200px;
+}
+
+.roomImg a {
+    cursor: pointer;
+}
+.roomFull h4 {
+    font-size: 14px;
+}
+
+.roomRow {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    flex: 1;
+}
+
+.roomInclusion {
+}
+
+.guestNo h5, .roomInclusion h5, .roomHighlights h5, .roomPrice h5, .roomBook h5 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.guestNo ul {
+    display: flex;
+}
+
+.guestNo ul li {
+    margin-right: 6px;
+}
+
+.roomInclusion ul li {
+    font-size: 13px;
+    color: #555;
+    padding-right: 20%;
+    text-indent: inherit;
+    text-overflow: ellipsis;      /* Needed to make it work */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.guestNo {
+}
+
+.roomHighlights {
+}
+
+.roomRow > div {
+    width: calc(100% / 5);
+}
+
+.roomHighlights ul li {
+    font-size: 12px;
+}
+
+.tooltipPopup {
+    display: none;
+    right: 0;
+    bottom: 100%;
+    margin: 0 0 15px;
+    z-index: 999;
+    position: absolute;
+    z-index: 99;
+    background: #ffff;
+    padding: 10px;
+    width: 350px;
+    box-shadow: 0px 0px 2px #ddd;
+}
+
+.note {
+    display: inline-flex;
+    position: relative;
+}
+.roomRight {
+    width: calc(100% - 200px);
+}
+
+.roomBook {
+    text-align: right;
+}
+
+.roomBook {
+    text-align: right;
+}
+
+.roomBooking {
+    display: block;
+    font-size: 15px;
+    padding: 7px 15px;
+    background: #ff9d02;
+    color: #fff;
+    border-radius: 3px;
+    border: 0px;
+    text-align: center;
+}
+.note:hover .tooltipPopup {
+    display: block;
+}
+
+
+.tooltipPopup:before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    right: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    z-index: 9;
+}
+
+.tooltipPopup:after {
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #eee;
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: -1px;
+}
+.roomPrice p del {
+    color: #999;
+}
+.roomFull {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.roomFull:last-child {
+    border: 0px;
+}
+.hotel-slide {
+    max-height: 400px;
+    margin-bottom: 30px;
+}
+
+.hotel-img img {
+    max-height: 400px;
+    object-fit: cover;
+}
+.seats-layoutinner ul li.seat-li.selected {
+    background-position: -50px 0;
+}
+.mar-bottom .tour-content.age .inputblock {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+select.child {
+    height: 30px;
+    margin-right: 10px;
+}
+.tour-content.age {
+    justify-content: end;
+}
+.all-airlines{max-height:265px; overflow:auto}
+
+.airlines-list img{max-width:50px}
+
+.flight-footer a.ng-binding {
+    font-size: 10px;
+    color: #455f75;
+    font-weight: bolder;
+    padding: 2px;
+    display: inline-block;
+}
+
+
+.fareq table tr td:first-child {
+    width: 150px;
+}
+.fareq table td {
+    padding: 5px;
+}
+
+.special-tab .bttn { background-color: #eeeeee;
+    padding: 8px 15px;
+    margin: 5px 0 5px 0;
+    border-color: #eeeeee;
+    outline: none;
+    border: none;
+    font-size: 13px; color: #666; }
+
+    
